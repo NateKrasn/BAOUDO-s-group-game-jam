@@ -6,7 +6,7 @@ var speed = 100
 func _ready() -> void:
 	spawn_enemies()
 	await get_tree().create_timer(2).timeout
-	spawn_enemies()
+
 
 
 func spawn_enemies():
