@@ -1,1 +1,8 @@
+res://static_body_2d.gd
+res://bullet.tscn
+res://bullet.gd
+res://game.tscn
+res://static_body_2d.tscn
 res://node_2d.tscn
+res://enemy.gd
+res://enemy.tscn
