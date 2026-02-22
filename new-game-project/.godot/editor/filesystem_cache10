@@ -1,5 +1,18 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1771698632
-game.tscn::PackedScene::304591715044180275::1771644686::0::1::::<><><>0<>0<><>::
+::res://::1771732499
 icon.svg::CompressedTexture2D::1790880795757653::1771644686::1771644777::1::::<><><>0<>0<>1d558fff71561543e2cf7e0d300c3350<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-node_2d.tscn::PackedScene::6591506790142202975::1771644811::0::1::::<><><>0<>0<><>::
+path_follow_2d.gd::GDScript::4430526419694730117::1771719057::0::1::::<>Path2D<><>0<>0<><>::
+character_body_2d.gd::GDScript::6205562592276473364::1771719057::0::1::::test_enemy<>CharacterBody2D<><>0<>0<><>::
+bullet.tscn::PackedScene::2936376436233714737::1771724571::0::1::::<><><>0<>0<><>::uid://ckgyrcb1pn21c::::res://bullet.gd<>uid://4q335xxs2p::::res://icon.svg
+bullet.gd::GDScript::5488603744407076794::1771725073::0::1::::bullet<>CharacterBody2D<><>0<>0<><>::
+game.tscn::PackedScene::7221901827780988396::1771725711::0::1::::<><><>0<>0<><>::uid://dmjxltlfv0w72::::res://tower.tscn<>uid://di1vnvt2dmsk5::::res://enemy.tscn
+enemy.tscn::PackedScene::7775746027530871018::1771724774::0::1::::<><><>0<>0<><>::uid://r8gdb33qqfot::::res://enemy.gd<>uid://4q335xxs2p::::res://icon.svg
+enemy.gd::GDScript::1261704564140918787::1771725711::0::1::::<>AnimatableBody2D<><>0<>0<><>::
+test tileset.png::CompressedTexture2D::5735938890830970161::1771732499::1771732499::1::::<><><>0<>0<>6816db6a29cdd132095e79ba69cdcdd2<>res://.godot/imported/test tileset.png-97a150806f4a473008e09681d85190aa.ctex::
+tower.tscn::PackedScene::8021524724281562923::1771724781::0::1::::<><><>0<>0<><>::uid://qehveuvid6if::::res://static_body_2d.gd<>uid://4q335xxs2p::::res://icon.svg
+static_body_2d.gd::GDScript::1131741771800602825::1771724805::0::1::::<>StaticBody2D<><>0<>0<><>::
+test_enemy.gd::GDScript::7109015632944876223::1771707952::0::1::::<>Area2D<><>0<>0<><>::
+test_level.gd::GDScript::9069149618150958457::1771700664::0::1::::<>Node2D<><>0<>0<><>::
+test_level.tscn::PackedScene::2848425375519684314::1771719057::0::1::::<><><>0<>0<><>::uid://d2hftl8rh5duf::::res://test_level.gd<>uid://b4egef8qu6u3f::::res://path_follow_2d.gd
+test enemy.tscn::PackedScene::7274826341069994968::1771719058::0::1::::<><><>0<>0<><>::uid://4q335xxs2p::::res://icon.svg<>uid://cuoayd5nkv7bk::::res://character_body_2d.gd
+test level.tscn::PackedScene::304591715044180275::1771644686::0::1::::<><><>0<>0<><>::
