@@ -1,7 +1,0 @@
-res://bunker.gd
-res://test_level.tscn
-res://test enemy.tscn
-res://bunker.tscn
-res://global signals.gd
-res://test_enemy.gd
-res://path_follow_2d.gd
