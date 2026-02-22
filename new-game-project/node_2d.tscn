@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c058fh2b0ony2"]
+
+[node name="Node2D" type="Node2D" unique_id=141802741]
+position = Vector2(232, -1)
+scale = Vector2(10.759999, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1376652124]
+scale = Vector2(-1.6079373, 12.438303)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D" unique_id=552437124]
