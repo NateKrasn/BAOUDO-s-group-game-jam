@@ -1,21 +1,21 @@
 [gd_scene format=3 uid="uid://dbv8ld8kpedym"]
 
-[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_fypwr"]
-[ext_resource type="Script" uid="uid://c8jwpi38ufm1t" path="res://test_enemy.gd" id="1_w6lxr"]
+[ext_resource type="Script" path="res://test_enemy.gd" id="1_w6lxr"]
+[ext_resource type="Texture2D" uid="uid://nnxcxybx1n86" path="res://Deer-Normal.png" id="2_w6lxr"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fypwr"]
-size = Vector2(23, 22.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w6lxr"]
 
-[node name="Node2D" type="PathFollow2D" unique_id=2139480626]
+[node name="test enemy" type="PathFollow2D" unique_id=990447708]
+rotates = false
+loop = false
 script = ExtResource("1_w6lxr")
 
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=80136918]
-position = Vector2(-0.25000036, -0.25000036)
-scale = Vector2(0.17578125, 0.17578125)
-texture = ExtResource("1_fypwr")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=635341469]
+position = Vector2(0, -16)
+texture = ExtResource("2_w6lxr")
 
-[node name="Area2D2" type="Area2D" parent="." unique_id=540149742]
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=810205579]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=1782159121]
-position = Vector2(-0.5, -0.25)
-shape = SubResource("RectangleShape2D_fypwr")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1415784316]
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_w6lxr")
