@@ -1,4 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
+<<<<<<< Updated upstream
 ::res://::1771797940
 bullet.gd::GDScript::-1::1771797920::0::1::::BULLET<>CharacterBody2D<><>0<>0<><>::
 bullet.tscn::PackedScene::-1::1771797920::0::1::::<><><>0<>0<><>::
@@ -25,3 +26,9 @@ test_level.gd::GDScript::9069149618150958457::1771797940::0::1::::<>Node2D<><>0<
 test_level.tscn::PackedScene::7789400362250605988::1771797940::0::1::::<><><>0<>0<><>::uid://bn8s4f81rjfta::::res://sprite sheet game jam.png<>uid://bb6gquk5qkd2k::::res://bunker.tscn<>uid://b4egef8qu6u3f::::res://path_follow_2d.gd<>uid://cuebxerci0hby::::res://whaether_controller.gd
 tower.tscn::PackedScene::8021524724281562923::1771797940::0::1::::<><><>0<>0<><>::uid://qehveuvid6if::::res://static_body_2d.gd<>uid://4q335xxs2p::::res://icon.svg
 whaether_controller.gd::GDScript::6184977777873295902::1771797940::0::1::::<>Node2D<><>0<>0<><>::
+=======
+::res://::1771644886
+game.tscn::PackedScene::304591715044180275::1771644686::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::1790880795757653::1771644686::1771644777::1::::<><><>0<>0<>1d558fff71561543e2cf7e0d300c3350<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+node_2d.tscn::PackedScene::6591506790142202975::1771644811::0::1::::<><><>0<>0<><>::
+>>>>>>> Stashed changes
