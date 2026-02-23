@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dbv8ld8kpedym"]
+
+[ext_resource type="Script" path="res://test_enemy.gd" id="1_w6lxr"]
+[ext_resource type="Texture2D" uid="uid://nnxcxybx1n86" path="res://Deer-Normal.png" id="2_w6lxr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w6lxr"]
+
+[node name="test enemy" type="PathFollow2D" unique_id=990447708]
+rotates = false
+loop = false
+script = ExtResource("1_w6lxr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=635341469]
+position = Vector2(0, -16)
+texture = ExtResource("2_w6lxr")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=810205579]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1415784316]
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_w6lxr")
