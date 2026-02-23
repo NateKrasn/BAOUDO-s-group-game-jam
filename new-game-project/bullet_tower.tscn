@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://b3c8c247v3hu4"]
+
+[ext_resource type="Script" uid="uid://dlmr46d7v7guy" path="res://bullet_tower.gd" id="1_ljl8x"]
+[ext_resource type="Texture2D" uid="uid://bbdhftwr05r28" path="res://game jam 1 art/gun.png" id="2_4ihri"]
+[ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="2_7v4cw"]
+[ext_resource type="Script" uid="uid://b752caw6yueob" path="res://range checker.gd" id="2_03766"]
+[ext_resource type="Texture2D" uid="uid://dm4ta267yv4d" path="res://game jam 1 art/Turret-Base.png" id="3_7v4cw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_suoaq"]
+atlas = ExtResource("2_4ihri")
+region = Rect2(0, 0, 32, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwllq"]
+atlas = ExtResource("3_7v4cw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uraqg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_suoaq")
+}],
+"loop": true,
+"name": &"defalt 2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iwllq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_suoaq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_03766"]
+radius = 56.0357
+
+[node name="bullet tower" type="StaticBody2D" unique_id=447542304]
+collision_layer = 2
+script = ExtResource("1_ljl8x")
+
+[node name="Timer" type="Timer" parent="." unique_id=956931091]
+autostart = true
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1006166996]
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=161108874]
+sprite_frames = SubResource("SpriteFrames_uraqg")
+autoplay = "default"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1271075293]
+rotation = 1.5707964
+sprite_frames = SubResource("SpriteFrames_uraqg")
+animation = &"defalt 2"
+autoplay = "defalt 2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=51557197]
+position = Vector2(-1, -1)
+shape = SubResource("CircleShape2D_suoaq")
+
+[node name="tower" type="Area2D" parent="." unique_id=244548655]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tower" unique_id=2011007525]
+shape = SubResource("CircleShape2D_03766")
+script = ExtResource("2_03766")
+
+[node name="Sprite2D" type="Sprite2D" parent="tower/CollisionShape2D" unique_id=1265470456]
+modulate = Color(1, 1, 1, 0.7058824)
+position = Vector2(-1.9073486e-06, 1.5497208e-06)
+scale = Vector2(1.78125, 1.8125)
+texture = ExtResource("2_7v4cw")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_shape_entered" from="tower" to="." method="_on_tower_body_shape_entered"]
+[connection signal="body_shape_exited" from="tower" to="." method="_on_tower_body_shape_exited"]

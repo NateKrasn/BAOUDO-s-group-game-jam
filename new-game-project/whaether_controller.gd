@@ -13,7 +13,9 @@ func _process(delta: float) -> void:
 		probability = randi_range(1, 100)
 		if probability < 61:
 			$fog.visible = true
+			GlobalSignals.fog_on = true
 			await get_tree().create_timer(5).timeout
+			GlobalSignals.fog_on = false
 			$fog.visible = false
 		elif probability < 86:
 			$snow.visible = true

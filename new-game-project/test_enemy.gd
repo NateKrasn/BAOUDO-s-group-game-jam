@@ -2,7 +2,7 @@ extends PathFollow2D
 class_name test_enemy
 signal minus_health
 
-var speed = 70
+var speed = 20
 @onready var anim = $AnimatedSprite2D 
 
 func _physics_process(delta: float) -> void:
@@ -29,3 +29,7 @@ func _process(delta: float) -> void:
 	if progress_ratio >= 1:
 		GlobalSignals.emit_signal("bunker_take_damage")
 		self.queue_free()
+
+
+func _on_character_body_2d_die() -> void:
+	self.queue_free()

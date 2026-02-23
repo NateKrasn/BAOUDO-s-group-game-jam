@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://test_enemy.gd" id="1_w6lxr"]
 [ext_resource type="Texture2D" uid="uid://bcob1y7cxtafv" path="res://Full-Deer-Sheet.png" id="2_w6lxr"]
+[ext_resource type="Script" uid="uid://cuoayd5nkv7bk" path="res://character_body_2d.gd" id="3_fv1qn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fv1qn"]
 atlas = ExtResource("2_w6lxr")
@@ -99,7 +100,7 @@ region = Rect2(792, 0, 36, 36)
 atlas = ExtResource("2_w6lxr")
 region = Rect2(828, 0, 36, 36)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_md8ab"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_w6lxr"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -189,13 +190,24 @@ animations = [{
 "speed": 7.0
 }]
 
-[node name="test enemy" type="PathFollow2D" unique_id=990447708]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fv1qn"]
+size = Vector2(20, 32)
+
+[node name="PathFollow2D" type="PathFollow2D" unique_id=1763438399]
 rotates = false
 loop = false
 script = ExtResource("1_w6lxr")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1303676235]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=184988832]
 position = Vector2(0, -17)
-sprite_frames = SubResource("SpriteFrames_md8ab")
+sprite_frames = SubResource("SpriteFrames_w6lxr")
 animation = &"down"
-frame_progress = 0.10734427
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=883904807]
+script = ExtResource("3_fv1qn")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D" unique_id=130492550]
+position = Vector2(-2, -17)
+shape = SubResource("RectangleShape2D_fv1qn")
+
+[connection signal="die" from="CharacterBody2D" to="." method="_on_character_body_2d_die"]

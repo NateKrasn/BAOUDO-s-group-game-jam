@@ -4,6 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://bb6gquk5qkd2k" path="res://bunker.tscn" id="2_4ptq8"]
 [ext_resource type="Script" uid="uid://b4egef8qu6u3f" path="res://path_follow_2d.gd" id="2_f7g2b"]
 [ext_resource type="Script" uid="uid://cuebxerci0hby" path="res://whaether_controller.gd" id="4_4ptq8"]
+[ext_resource type="PackedScene" uid="uid://b3c8c247v3hu4" path="res://bullet_tower.tscn" id="5_sb12i"]
+[ext_resource type="PackedScene" uid="uid://cy5k1vf77gg8m" path="res://range_ui.tscn" id="6_gbhdq"]
+[ext_resource type="PackedScene" uid="uid://bwvjq061pgsnk" path="res://light_tower.tscn" id="7_y646j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ptq8"]
 texture = ExtResource("1_f7g2b")
@@ -57,7 +60,7 @@ curve = SubResource("Curve2D_1c2mv")
 script = ExtResource("2_f7g2b")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1775149114]
-position = Vector2(287, 141)
+position = Vector2(288, 140)
 zoom = Vector2(2, 2)
 
 [node name="whaether controller" type="Node2D" parent="." unique_id=1459808361]
@@ -65,9 +68,9 @@ script = ExtResource("4_4ptq8")
 
 [node name="fog" type="DirectionalLight2D" parent="whaether controller" unique_id=253221019]
 visible = false
-color = Color(1, 1, 0.4509804, 1)
+color = Color(0.33770826, 0.25519815, 0.28137454, 1)
 energy = 0.6
-blend_mode = 1
+blend_mode = 2
 
 [node name="snow" type="CPUParticles2D" parent="whaether controller" unique_id=2016303546]
 visible = false
@@ -82,9 +85,26 @@ scale_amount_max = 3.0
 
 [node name="storm" type="DirectionalLight2D" parent="whaether controller" unique_id=1232336692]
 visible = false
-color = Color(1, 1, 0.4509804, 1)
-energy = 0.4
+color = Color(1, 1, 0.19215687, 1)
+energy = 0.7
 blend_mode = 1
 
 [node name="Bunker" parent="." unique_id=12930690 instance=ExtResource("2_4ptq8")]
 position = Vector2(536, 270)
+
+[node name="bullet tower" parent="." unique_id=447542304 instance=ExtResource("5_sb12i")]
+position = Vector2(474, 129)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=635484641]
+
+[node name="range UI" parent="." unique_id=1355217930 instance=ExtResource("6_gbhdq")]
+offset_left = 456.0
+offset_top = -16.0
+offset_right = 456.0
+offset_bottom = -16.0
+
+[node name="bullet tower2" parent="." unique_id=978807695 instance=ExtResource("5_sb12i")]
+position = Vector2(191, 59)
+
+[node name="light tower" parent="." unique_id=970847785 instance=ExtResource("7_y646j")]
+position = Vector2(439, 131)
