@@ -2,9 +2,8 @@ extends CharacterBody2D
 
 
 
-func _ready() -> void:
-	pass 
-
-
-func _physics_process(delta: float) -> void:
-	pass
+func _process(delta: float) -> void:
+	if velocity.x > 0:
+		$AnimatedSprite2D.play("right")
+	if velocity.x < 0:
+		$AnimatedSprite2D.play("left")

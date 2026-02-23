@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://codrbekwo4f82"
-path="res://.godot/imported/Screenshot 2026-02-21 234630.png-122d9adb6227fc0bed47b0b0fb0e2e87.ctex"
+uid="uid://bcob1y7cxtafv"
+path="res://.godot/imported/Full-Deer-Sheet.png-08f5795bb23ab17adfd582266ade037c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Screenshot 2026-02-21 234630.png"
-dest_files=["res://.godot/imported/Screenshot 2026-02-21 234630.png-122d9adb6227fc0bed47b0b0fb0e2e87.ctex"]
+source_file="res://Full-Deer-Sheet.png"
+dest_files=["res://.godot/imported/Full-Deer-Sheet.png-08f5795bb23ab17adfd582266ade037c.ctex"]
 
 [params]
 

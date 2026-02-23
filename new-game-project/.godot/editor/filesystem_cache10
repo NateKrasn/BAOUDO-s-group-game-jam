@@ -1,20 +1,20 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1771800114
-bunker.gd::GDScript::4450701859814328436::1771800103::0::1::::<>Area2D<><>0<>0<><>::
-bunker.png::CompressedTexture2D::8360897228572930373::1771800103::1771800114::1::::<><><>0<>0<>5041e08754e1ac7eb41b202b1babd425<>res://.godot/imported/bunker.png-108a50d4ccf35d8ae95ee7b6c1d1c844.ctex::
-bunker.tscn::PackedScene::2520999179665952188::1771800103::0::1::::<><><>0<>0<><>::uid://b4n7n6idfx8w3::::res://bunker.gd<>uid://drec0xypc3p6l::::res://bunker.png
-character_body_2d.gd::GDScript::6205562592276473364::1771800103::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Deer-Normal.png::CompressedTexture2D::940693185708205077::1771800103::1771800114::1::::<><><>0<>0<>7aa5b700c16b0cebeddfe96512ab405a<>res://.godot/imported/Deer-Normal.png-6ffe6ec5ac52a42c4879bb2679995bd8.ctex::
-global signals.gd::GDScript::7887070486878578565::1771800103::0::1::::<>Node<><>0<>0<><>::
+::res://::1771815559
+bunker.gd::GDScript::4450701859814328436::1771811866::0::1::::<>Area2D<><>0<>0<><>::
+bunker.png::CompressedTexture2D::8360897228572930373::1771811866::1771811938::1::::<><><>0<>0<>5041e08754e1ac7eb41b202b1babd425<>res://.godot/imported/bunker.png-108a50d4ccf35d8ae95ee7b6c1d1c844.ctex::
+bunker.tscn::PackedScene::2520999179665952188::1771811866::0::1::::<><><>0<>0<><>::uid://b4n7n6idfx8w3::::res://bunker.gd<>uid://drec0xypc3p6l::::res://bunker.png
+character_body_2d.gd::GDScript::6205562592276473364::1771812321::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Deer-Normal.png::CompressedTexture2D::940693185708205077::1771815527::1771811938::1::::<><><>0<>0<>7aa5b700c16b0cebeddfe96512ab405a<>res://.godot/imported/Deer-Normal.png-6ffe6ec5ac52a42c4879bb2679995bd8.ctex::
+Full-Deer-Sheet.png::CompressedTexture2D::2555808117276794759::1771815559::1771815560::1::::<><><>0<>0<>520dbad4c166cd283afe274d3f1abe3a<>res://.godot/imported/Full-Deer-Sheet.png-08f5795bb23ab17adfd582266ade037c.ctex::
+global signals.gd::GDScript::7887070486878578565::1771811866::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::1790880795757653::1771644686::1771644777::1::::<><><>0<>0<>1d558fff71561543e2cf7e0d300c3350<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-path_follow_2d.gd::GDScript::4430526419694730117::1771800103::0::1::::<>Path2D<><>0<>0<><>::
-Screenshot 2026-02-21 234630.png::CompressedTexture2D::5762712512812649113::1771800103::1771800114::1::::<><><>0<>0<>8ac78ffc3844b5589517a303f79467b1<>res://.godot/imported/Screenshot 2026-02-21 234630.png-122d9adb6227fc0bed47b0b0fb0e2e87.ctex::
-sprite sheet game jam.png::CompressedTexture2D::3368145125564228338::1771800103::1771800114::1::::<><><>0<>0<>04a46c790c09fcc611a642c7a334ee09<>res://.godot/imported/sprite sheet game jam.png-704959d9d8c6be13eecaa138f741bfce.ctex::
-test enemy.tscn::PackedScene::7274826341069994968::1771800103::0::1::::<><><>0<>0<><>::res://test_enemy.gd<>uid://nnxcxybx1n86::::res://Deer-Normal.png
-test level.tscn::PackedScene::304591715044180275::1771800103::0::1::::<><><>0<>0<><>::
-test tileset.png::CompressedTexture2D::5735938890830970161::1771800103::1771800114::1::::<><><>0<>0<>6816db6a29cdd132095e79ba69cdcdd2<>res://.godot/imported/test tileset.png-97a150806f4a473008e09681d85190aa.ctex::
-test_enemy.gd::GDScript::-1::1771800103::0::1::::test_enemy<>PathFollow2D<><>0<>0<><>::
-test_level.gd::GDScript::9069149618150958457::1771800103::0::1::::<>Node2D<><>0<>0<><>::
-test_level.tscn::PackedScene::7789400362250605988::1771800103::0::1::::<><><>0<>0<><>::uid://bn8s4f81rjfta::::res://sprite sheet game jam.png<>uid://bb6gquk5qkd2k::::res://bunker.tscn<>uid://b4egef8qu6u3f::::res://path_follow_2d.gd<>uid://cuebxerci0hby::::res://whaether_controller.gd
-tower.tscn::PackedScene::8021524724281562923::1771800103::0::1::::<><><>0<>0<><>::uid://qehveuvid6if::::res://static_body_2d.gd<>uid://4q335xxs2p::::res://icon.svg
-whaether_controller.gd::GDScript::6184977777873295902::1771800103::0::1::::<>Node2D<><>0<>0<><>::
+path_follow_2d.gd::GDScript::4430526419694730117::1771811866::0::1::::<>Path2D<><>0<>0<><>::
+Screenshot 2026-02-21 234630.png::CompressedTexture2D::5762712512812649113::1771811866::1771811938::1::::<><><>0<>0<>8ac78ffc3844b5589517a303f79467b1<>res://.godot/imported/Screenshot 2026-02-21 234630.png-122d9adb6227fc0bed47b0b0fb0e2e87.ctex::
+sprite sheet game jam.png::CompressedTexture2D::3368145125564228338::1771811866::1771811938::1::::<><><>0<>0<>04a46c790c09fcc611a642c7a334ee09<>res://.godot/imported/sprite sheet game jam.png-704959d9d8c6be13eecaa138f741bfce.ctex::
+test enemy.tscn::PackedScene::7274826341069994968::1771812631::0::1::::<><><>0<>0<><>::res://test_enemy.gd<>uid://cuoayd5nkv7bk::::res://character_body_2d.gd<>uid://nnxcxybx1n86::::res://Deer-Normal.png<>uid://drec0xypc3p6l::::res://bunker.png
+test level.tscn::PackedScene::304591715044180275::1771811866::0::1::::<><><>0<>0<><>::
+test tileset.png::CompressedTexture2D::5735938890830970161::1771811866::1771811938::1::::<><><>0<>0<>6816db6a29cdd132095e79ba69cdcdd2<>res://.godot/imported/test tileset.png-97a150806f4a473008e09681d85190aa.ctex::
+test_enemy.gd::GDScript::-1::1771812666::0::1::::test_enemy<>PathFollow2D<><>0<>0<><>::
+test_level.gd::GDScript::9069149618150958457::1771811866::0::1::::<>Node2D<><>0<>0<><>::
+test_level.tscn::PackedScene::7789400362250605988::1771811866::0::1::::<><><>0<>0<><>::uid://bn8s4f81rjfta::::res://sprite sheet game jam.png<>uid://bb6gquk5qkd2k::::res://bunker.tscn<>uid://b4egef8qu6u3f::::res://path_follow_2d.gd<>uid://cuebxerci0hby::::res://whaether_controller.gd
+whaether_controller.gd::GDScript::6184977777873295902::1771811866::0::1::::<>Node2D<><>0<>0<><>::
