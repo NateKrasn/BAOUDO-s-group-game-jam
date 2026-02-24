@@ -1,38 +1,59 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1771884645
-bullet.gd::GDScript::5488603744407076794::1771882241::0::1::::<>CharacterBody2D<><>0<>0<><>::
-bullet.tscn::PackedScene::2936376436233714737::1771882241::0::1::::<><><>0<>0<><>::uid://ckgyrcb1pn21c::::res://bullet.gd<>uid://4q335xxs2p::::res://icon.svg
-bullet_tower.gd::GDScript::7957197475388178280::1771882241::0::1::::<>StaticBody2D<><>0<>0<><>::
-bullet_tower.tscn::PackedScene::4357845757828118353::1771882241::0::1::::<><><>0<>0<><>::uid://dlmr46d7v7guy::::res://bullet_tower.gd<>uid://bbdhftwr05r28::::res://game jam 1 art/gun.png<>uid://xv0b47p0u33k::::res://game jam 1 art/range.png<>uid://b752caw6yueob::::res://range checker.gd<>uid://dm4ta267yv4d::::res://game jam 1 art/Turret-Base.png
-bunker.gd::GDScript::4450701859814328436::1771882241::0::1::::<>Area2D<><>0<>0<><>::
-bunker.png::CompressedTexture2D::8360897228572930373::1771882241::1771882278::1::::<><><>0<>0<>5041e08754e1ac7eb41b202b1babd425<>res://.godot/imported/bunker.png-108a50d4ccf35d8ae95ee7b6c1d1c844.ctex::
-bunker.tscn::PackedScene::2520999179665952188::1771882241::0::1::::<><><>0<>0<><>::uid://b4n7n6idfx8w3::::res://bunker.gd<>uid://drec0xypc3p6l::::res://bunker.png
-character_body_2d.gd::GDScript::6205562592276473364::1771882241::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Deer-Normal.png::CompressedTexture2D::940693185708205077::1771882241::1771882278::1::::<><><>0<>0<>7aa5b700c16b0cebeddfe96512ab405a<>res://.godot/imported/Deer-Normal.png-6ffe6ec5ac52a42c4879bb2679995bd8.ctex::
-Full-Deer-Sheet.png::CompressedTexture2D::2555808117276794759::1771882241::1771882278::1::::<><><>0<>0<>520dbad4c166cd283afe274d3f1abe3a<>res://.godot/imported/Full-Deer-Sheet.png-08f5795bb23ab17adfd582266ade037c.ctex::
-global signals.gd::GDScript::7887070486878578565::1771882241::0::1::::<>Node<><>0<>0<><>::
+::res://::1771902484
+bullet.gd::GDScript::5488603744407076794::1771893984::0::1::::<>CharacterBody2D<><>0<>0<><>::
+bullet.tscn::PackedScene::2936376436233714737::1771900363::0::1::::<><><>0<>0<><>::uid://ckgyrcb1pn21c::::res://bullet.gd
+bullet_tower.gd::GDScript::7957197475388178280::1771900271::0::1::::<>StaticBody2D<><>0<>0<><>::
+bullet_tower.tscn::PackedScene::4357845757828118353::1771900151::0::1::::<><><>0<>0<><>::uid://dlmr46d7v7guy::::res://bullet_tower.gd<>uid://bbdhftwr05r28::::res://game jam 1 art/gun.png<>uid://xv0b47p0u33k::::res://game jam 1 art/range.png<>uid://b752caw6yueob::::res://range checker.gd<>uid://dm4ta267yv4d::::res://game jam 1 art/Turret-Base.png<>uid://e4sxnn2lpfw4::::res://game jam 1 art/gun-Sheet.png<>uid://csu5hyq3itnvg::::res://game jam 1 art/visual effect icons.png
+bunker.gd::GDScript::4450701859814328436::1771887626::0::1::::<>Area2D<><>0<>0<><>::
+bunker.png::CompressedTexture2D::8360897228572930373::1771887626::1771887648::1::::<><><>0<>0<>5041e08754e1ac7eb41b202b1babd425<>res://.godot/imported/bunker.png-108a50d4ccf35d8ae95ee7b6c1d1c844.ctex::
+bunker.tscn::PackedScene::2520999179665952188::1771887626::0::1::::<><><>0<>0<><>::uid://b4n7n6idfx8w3::::res://bunker.gd<>uid://drec0xypc3p6l::::res://bunker.png
+character_body_2d.gd::GDScript::6205562592276473364::1771887626::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Deer-Normal.png::CompressedTexture2D::940693185708205077::1771887626::1771887648::1::::<><><>0<>0<>7aa5b700c16b0cebeddfe96512ab405a<>res://.godot/imported/Deer-Normal.png-6ffe6ec5ac52a42c4879bb2679995bd8.ctex::
+Full-Deer-Sheet.png::CompressedTexture2D::2555808117276794759::1771887626::1771887648::1::::<><><>0<>0<>520dbad4c166cd283afe274d3f1abe3a<>res://.godot/imported/Full-Deer-Sheet.png-08f5795bb23ab17adfd582266ade037c.ctex::
+global signals.gd::GDScript::7887070486878578565::1771887626::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::1790880795757653::1771644686::1771644777::1::::<><><>0<>0<>1d558fff71561543e2cf7e0d300c3350<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-light_tower.gd::GDScript::4688078287065511574::1771882241::0::1::::<>StaticBody2D<><>0<>0<><>::
-light_tower.tscn::PackedScene::3974503564376758956::1771882241::0::1::::<><><>0<>0<><>::uid://b752caw6yueob::::res://range checker.gd<>uid://b71671512l28a::::res://light_tower.gd<>uid://m42ad8ht81tc::::res://game jam 1 art/Light Tower.png<>uid://xv0b47p0u33k::::res://game jam 1 art/range.png
-path_follow_2d.gd::GDScript::4430526419694730117::1771882241::0::1::::<>Path2D<><>0<>0<><>::
-range button.gd::GDScript::5335910390457065384::1771882242::0::1::::<>Button<><>0<>0<><>::
-range checker.gd::GDScript::4696037978551493485::1771882242::0::1::::<>CollisionShape2D<><>0<>0<><>::
-range_ui.tscn::PackedScene::6519959660101279862::1771882242::0::1::::<><><>0<>0<><>::uid://cia0wuhi3aaiy::::res://range button.gd
-sprite sheet game jam.png::CompressedTexture2D::3368145125564228338::1771882242::1771882278::1::::<><><>0<>0<>04a46c790c09fcc611a642c7a334ee09<>res://.godot/imported/sprite sheet game jam.png-704959d9d8c6be13eecaa138f741bfce.ctex::
-test enemy.tscn::PackedScene::7274826341069994968::1771882242::0::1::::<><><>0<>0<><>::res://test_enemy.gd<>uid://bcob1y7cxtafv::::res://Full-Deer-Sheet.png<>uid://cuoayd5nkv7bk::::res://character_body_2d.gd
-test tileset.png::CompressedTexture2D::5735938890830970161::1771882242::1771882278::1::::<><><>0<>0<>6816db6a29cdd132095e79ba69cdcdd2<>res://.godot/imported/test tileset.png-97a150806f4a473008e09681d85190aa.ctex::
-test_enemy.gd::GDScript::-1::1771882242::0::1::::test_enemy<>PathFollow2D<><>0<>0<><>::
-test_level.gd::GDScript::9069149618150958457::1771882242::0::1::::<>Node2D<><>0<>0<><>::
-test_level.tscn::PackedScene::7789400362250605988::1771882242::0::1::::<><><>0<>0<><>::uid://bn8s4f81rjfta::::res://sprite sheet game jam.png<>uid://bb6gquk5qkd2k::::res://bunker.tscn<>uid://b4egef8qu6u3f::::res://path_follow_2d.gd<>uid://cuebxerci0hby::::res://whaether_controller.gd<>uid://b3c8c247v3hu4::::res://bullet_tower.tscn<>uid://cy5k1vf77gg8m::::res://range_ui.tscn<>uid://bwvjq061pgsnk::::res://light_tower.tscn
-whaether_controller.gd::GDScript::6184977777873295902::1771882242::0::1::::<>Node2D<><>0<>0<><>::
-::res://game jam 1 art/::1771882278
-bunker.png::CompressedTexture2D::6332722613474841473::1771882241::1771882278::1::::<><><>0<>0<>0f9ea87ebffbaa01256221c3c8f35975<>res://.godot/imported/bunker.png-8f8a38ae572cccb2afcb621d0af79072.ctex::
-Deer-Normal.png::CompressedTexture2D::8784109047876239976::1771882241::1771882278::1::::<><><>0<>0<>ba7417149713cc443ce6087c39316e9a<>res://.godot/imported/Deer-Normal.png-c20a34a17bcbbf9933bc721916c42e50.ctex::
-Full-Deer-Sheet.png::CompressedTexture2D::602743700660622349::1771882241::1771882278::1::::<><><>0<>0<>0b5b825d76fc6af6b60c19155e71925b<>res://.godot/imported/Full-Deer-Sheet.png-8fa21d3c4466827f2195eb46e3ffc507.ctex::
-gun.png::CompressedTexture2D::2463237641248562715::1771882241::1771882278::1::::<><><>0<>0<>fcdba58f7debef7bc57fed09d41721aa<>res://.godot/imported/gun.png-eaa16de334110b9fa363e3e5b5bd8359.ctex::
-Light Tower.png::CompressedTexture2D::903772646222178888::1771882241::1771882278::1::::<><><>0<>0<>526021493b3d0d9a0304a6aaf0679a64<>res://.godot/imported/Light Tower.png-2fdd625ef6e6e687ad1bf065f315f8d0.ctex::
-range.png::CompressedTexture2D::1659216620449721282::1771882241::1771882278::1::::<><><>0<>0<>a8b2b74b8cdb74dcf77a5f64f8ee7e11<>res://.godot/imported/range.png-7ca6742669353854af9d81d3e05cdb2b.ctex::
-sprite sheet game jam.png::CompressedTexture2D::2096717340020571912::1771882241::1771882278::1::::<><><>0<>0<>97f667efe4d86c3849eb6722ef3ecd9a<>res://.godot/imported/sprite sheet game jam.png-1725b6dc253eae9dc48321c125e4d7f6.ctex::
-Turret-Base.png::CompressedTexture2D::237133829999183633::1771882241::1771882278::1::::<><><>0<>0<>6598b7708906e73975e4913338080c5d<>res://.godot/imported/Turret-Base.png-128f48daf23c336884863ab3e5c0cdfc.ctex::
-Wolf Fast.png::CompressedTexture2D::3642631851819049222::1771882241::1771882278::1::::<><><>0<>0<>3749ce4b8511b56677d979f9765336d3<>res://.godot/imported/Wolf Fast.png-e59b422d8a6e341df2d265e652adb0ec.ctex::
-Zeus-Sheet.png::CompressedTexture2D::4601799994556750827::1771882241::1771882278::1::::<><><>0<>0<>facc714d902a94f910e4191cf3c6d00c<>res://.godot/imported/Zeus-Sheet.png-6df48bdcdbc76a4c634ae2452f2e6e91.ctex::
+light_tower.gd::GDScript::4688078287065511574::1771887626::0::1::::<>StaticBody2D<><>0<>0<><>::
+light_tower.tscn::PackedScene::3974503564376758956::1771887626::0::1::::<><><>0<>0<><>::uid://b752caw6yueob::::res://range checker.gd<>uid://b71671512l28a::::res://light_tower.gd<>uid://m42ad8ht81tc::::res://game jam 1 art/Light Tower.png<>uid://xv0b47p0u33k::::res://game jam 1 art/range.png
+path_follow_2d.gd::GDScript::4430526419694730117::1771893601::0::1::::<>Path2D<><>0<>0<><>::
+range button.gd::GDScript::5335910390457065384::1771887626::0::1::::<>Button<><>0<>0<><>::
+range checker.gd::GDScript::4696037978551493485::1771887626::0::1::::<>CollisionShape2D<><>0<>0<><>::
+range_ui.tscn::PackedScene::6519959660101279862::1771900605::0::1::::<><><>0<>0<><>::uid://cia0wuhi3aaiy::::res://range button.gd
+heat_tower.gd::GDScript::3353318004981317193::1771902462::0::1::::<>StaticBody2D<><>0<>0<><>::
+heat_tower.tscn::PackedScene::3030880653932697175::1771902462::0::1::::<><><>0<>0<><>::uid://bn1mwmg7evc0h::::res://heat_tower.gd<>uid://m42ad8ht81tc::::res://game jam 1 art/Light Tower.png<>uid://b752caw6yueob::::res://range checker.gd<>uid://xv0b47p0u33k::::res://game jam 1 art/range.png
+sprite sheet game jam.png::CompressedTexture2D::3368145125564228338::1771887626::1771887648::1::::<><><>0<>0<>04a46c790c09fcc611a642c7a334ee09<>res://.godot/imported/sprite sheet game jam.png-704959d9d8c6be13eecaa138f741bfce.ctex::
+test enemy.tscn::PackedScene::7274826341069994968::1771887626::0::1::::<><><>0<>0<><>::res://test_enemy.gd<>uid://bcob1y7cxtafv::::res://Full-Deer-Sheet.png<>uid://cuoayd5nkv7bk::::res://character_body_2d.gd
+test tileset.png::CompressedTexture2D::5735938890830970161::1771887627::1771887648::1::::<><><>0<>0<>6816db6a29cdd132095e79ba69cdcdd2<>res://.godot/imported/test tileset.png-97a150806f4a473008e09681d85190aa.ctex::
+test_enemy.gd::GDScript::-1::1771887627::0::1::::test_enemy<>PathFollow2D<><>0<>0<><>::
+test_level.gd::GDScript::9069149618150958457::1771887627::0::1::::<>Node2D<><>0<>0<><>::
+test_level.tscn::PackedScene::7789400362250605988::1771902484::0::1::::<><><>0<>0<><>::uid://bn8s4f81rjfta::::res://sprite sheet game jam.png<>uid://bb6gquk5qkd2k::::res://bunker.tscn<>uid://b4egef8qu6u3f::::res://path_follow_2d.gd<>uid://cuebxerci0hby::::res://whaether_controller.gd<>uid://b3c8c247v3hu4::::res://bullet_tower.tscn<>uid://cy5k1vf77gg8m::::res://range_ui.tscn<>uid://bwvjq061pgsnk::::res://light_tower.tscn<>uid://bjggfq0xgb73x::::res://heat_tower.tscn
+whaether_controller.gd::GDScript::6184977777873295902::1771895556::0::1::::<>Node2D<><>0<>0<><>::
+::res://game jam 1 art/::1771903312
+bullet.png::CompressedTexture2D::1958806092328167748::1771900015::1771900015::1::::<><><>0<>0<>ebcf803d67514a8497364567b2bee70d<>res://.godot/imported/bullet.png-242901d67bdc4ed180d32014660fa52b.ctex::
+bunker.png::CompressedTexture2D::6332722613474841473::1771900015::1771887648::1::::<><><>0<>0<>0f9ea87ebffbaa01256221c3c8f35975<>res://.godot/imported/bunker.png-8f8a38ae572cccb2afcb621d0af79072.ctex::
+Deer-Normal.png::CompressedTexture2D::8784109047876239976::1771900015::1771887647::1::::<><><>0<>0<>ba7417149713cc443ce6087c39316e9a<>res://.godot/imported/Deer-Normal.png-c20a34a17bcbbf9933bc721916c42e50.ctex::
+Full-Deer-Sheet.png::CompressedTexture2D::602743700660622349::1771900015::1771887648::1::::<><><>0<>0<>0b5b825d76fc6af6b60c19155e71925b<>res://.godot/imported/Full-Deer-Sheet.png-8fa21d3c4466827f2195eb46e3ffc507.ctex::
+gun-Sheet.png::CompressedTexture2D::341757012677533541::1771900015::1771900015::1::::<><><>0<>0<>57d9197675ff94d0318110dc204c6d41<>res://.godot/imported/gun-Sheet.png-e484c22df4d4d3727a0d67929938cfef.ctex::
+gun.png::CompressedTexture2D::2463237641248562715::1771900015::1771887647::1::::<><><>0<>0<>fcdba58f7debef7bc57fed09d41721aa<>res://.godot/imported/gun.png-eaa16de334110b9fa363e3e5b5bd8359.ctex::
+Light Tower.png::CompressedTexture2D::903772646222178888::1771900015::1771887648::1::::<><><>0<>0<>526021493b3d0d9a0304a6aaf0679a64<>res://.godot/imported/Light Tower.png-2fdd625ef6e6e687ad1bf065f315f8d0.ctex::
+range.png::CompressedTexture2D::1659216620449721282::1771900015::1771887648::1::::<><><>0<>0<>a8b2b74b8cdb74dcf77a5f64f8ee7e11<>res://.godot/imported/range.png-7ca6742669353854af9d81d3e05cdb2b.ctex::
+sprite sheet game jam.png::CompressedTexture2D::2096717340020571912::1771900015::1771887648::1::::<><><>0<>0<>97f667efe4d86c3849eb6722ef3ecd9a<>res://.godot/imported/sprite sheet game jam.png-1725b6dc253eae9dc48321c125e4d7f6.ctex::
+Turret-Base.png::CompressedTexture2D::237133829999183633::1771900015::1771887648::1::::<><><>0<>0<>6598b7708906e73975e4913338080c5d<>res://.godot/imported/Turret-Base.png-128f48daf23c336884863ab3e5c0cdfc.ctex::
+visual effect icons.png::CompressedTexture2D::6079363404853227932::1771900015::1771887788::1::::<><><>0<>0<>fde8cc8224780deb293d36e7d75fe22a<>res://.godot/imported/visual effect icons.png-a3d5c9f6f04fe069a0ad1a8dc8ed899e.ctex::
+Wolf Fast.png::CompressedTexture2D::3642631851819049222::1771900015::1771887648::1::::<><><>0<>0<>3749ce4b8511b56677d979f9765336d3<>res://.godot/imported/Wolf Fast.png-e59b422d8a6e341df2d265e652adb0ec.ctex::
+Zeus-Sheet.png::CompressedTexture2D::4601799994556750827::1771900015::1771887648::1::::<><><>0<>0<>facc714d902a94f910e4191cf3c6d00c<>res://.godot/imported/Zeus-Sheet.png-6df48bdcdbc76a4c634ae2452f2e6e91.ctex::
+::res://game jam 1 art/game jam 1 art/::1771903312
+bullet.png::CompressedTexture2D::5014423664056955343::1771903312::1771903312::1::::<><><>0<>0<>6ac48a2bf0a9fabb3a6b9bfb16778bcf<>res://.godot/imported/bullet.png-1bae670eac6cfb766af6878673e198e0.ctex::
+bunker.png::CompressedTexture2D::7930170366794935981::1771903312::1771903312::1::::<><><>0<>0<>856230116fc846b57b018a187d5a1625<>res://.godot/imported/bunker.png-7d880a349c29d176ea6af292ed9a61d6.ctex::
+Deer-Normal.png::CompressedTexture2D::7735971274395253728::1771903312::1771903312::1::::<><><>0<>0<>e30a916b90432e252c9679dda130298f<>res://.godot/imported/Deer-Normal.png-45c6d180860f791c5d7f1c8552c1ff23.ctex::
+fog warning.png::CompressedTexture2D::7016121621157773798::1771903312::1771903312::1::::<><><>0<>0<>708bcde7e2bd4441a642f02f397cca24<>res://.godot/imported/fog warning.png-c751c04af439936fb7c4c9a9b5e94d7c.ctex::
+Full-Deer-Sheet.png::CompressedTexture2D::6190237269692015844::1771903312::1771903312::1::::<><><>0<>0<>4cd44959ab05748c9d9567bca6f6f576<>res://.godot/imported/Full-Deer-Sheet.png-e39d8155d04ef757d7722d2481c5364f.ctex::
+gun-Sheet.png::CompressedTexture2D::6513663013183962099::1771903312::1771903312::1::::<><><>0<>0<>a430c3b45e233f6f4215bc5b583a0f34<>res://.godot/imported/gun-Sheet.png-76235a023923ed40e370d3fa02312834.ctex::
+gun.png::CompressedTexture2D::3114924442705971050::1771903312::1771903312::1::::<><><>0<>0<>60bcfd8188a922086573ffa154f43e6f<>res://.godot/imported/gun.png-e3fb911283a0934540b9d9b7cc567391.ctex::
+Light Tower.png::CompressedTexture2D::5806151061520537643::1771903312::1771903312::1::::<><><>0<>0<>e09bba096f9e10c227d5d3e0dd06495e<>res://.godot/imported/Light Tower.png-22f6d57ba6b9b5fe0dc69f0746b4f92f.ctex::
+range.png::CompressedTexture2D::5329489221888075865::1771903312::1771903312::1::::<><><>0<>0<>bc063b9a5f4ce4aae6277b42060bfbdc<>res://.godot/imported/range.png-bb8396abf00903cc6e1921c9bf91e8c9.ctex::
+snow warning.png::CompressedTexture2D::4208363684854367040::1771903312::1771903312::1::::<><><>0<>0<>b15ced093904ef714c31fe8bc833adce<>res://.godot/imported/snow warning.png-ceeba658cc412cafc6b276db733428b7.ctex::
+sprite sheet game jam.png::CompressedTexture2D::1721383572611709290::1771903312::1771903312::1::::<><><>0<>0<>6dd23d1bdb6bc5a5eab2fd8dc7c4c5bb<>res://.godot/imported/sprite sheet game jam.png-3e490ec430e896fa7b74feed5b98cf37.ctex::
+Turret-Base.png::CompressedTexture2D::755171591293826953::1771903312::1771903312::1::::<><><>0<>0<>5036cff3d118ddc3b8eedef315706d29<>res://.godot/imported/Turret-Base.png-91c5ef96c65a96745febf0dbafbd7488.ctex::
+visual effect icons.png::CompressedTexture2D::2486803107917051149::1771903312::1771903312::1::::<><><>0<>0<>7aa0bb1a222e7dc853ead3f3af599191<>res://.godot/imported/visual effect icons.png-7f276cd3f0a0c786b1d3443310b004f5.ctex::
+Wolf Fast.png::CompressedTexture2D::5631466360780358434::1771903312::1771903312::1::::<><><>0<>0<>1adf619cbed0a722cd1998f5ebd55b26<>res://.godot/imported/Wolf Fast.png-d0f0b4a2c3dfd1592c53481fe7bd07bb.ctex::
+Zeus-Sheet.png::CompressedTexture2D::2711068752513387283::1771903312::1771903312::1::::<><><>0<>0<>f95c3784a8134515e59684142dec8f2a<>res://.godot/imported/Zeus-Sheet.png-f2ff19c5e2d6aef9fc3be5aa2ee24a1d.ctex::

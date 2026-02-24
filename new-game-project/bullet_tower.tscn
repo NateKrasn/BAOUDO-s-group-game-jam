@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="2_7v4cw"]
 [ext_resource type="Script" uid="uid://b752caw6yueob" path="res://range checker.gd" id="2_03766"]
 [ext_resource type="Texture2D" uid="uid://dm4ta267yv4d" path="res://game jam 1 art/Turret-Base.png" id="3_7v4cw"]
+[ext_resource type="Texture2D" uid="uid://e4sxnn2lpfw4" path="res://game jam 1 art/gun-Sheet.png" id="4_iwllq"]
+[ext_resource type="Texture2D" uid="uid://csu5hyq3itnvg" path="res://game jam 1 art/visual effect icons.png" id="6_suoaq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_suoaq"]
 atlas = ExtResource("2_4ihri")
@@ -13,6 +15,10 @@ region = Rect2(0, 0, 32, 38)
 [sub_resource type="AtlasTexture" id="AtlasTexture_iwllq"]
 atlas = ExtResource("3_7v4cw")
 region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrbsn"]
+atlas = ExtResource("4_iwllq")
+region = Rect2(32, 0, 32, 38)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uraqg"]
 animations = [{
@@ -31,12 +37,47 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrbsn")
+}],
+"loop": true,
+"name": &"frozen gun",
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_suoaq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_03766"]
 radius = 56.0357
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uraqg"]
+atlas = ExtResource("6_suoaq")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_buywi"]
+atlas = ExtResource("6_suoaq")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n8uu4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uraqg")
+}],
+"loop": true,
+"name": &"both",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_buywi")
+}],
+"loop": true,
+"name": &"winter effect",
+"speed": 5.0
+}]
 
 [node name="bullet tower" type="StaticBody2D" unique_id=447542304]
 collision_layer = 2
@@ -45,7 +86,8 @@ script = ExtResource("1_ljl8x")
 [node name="Timer" type="Timer" parent="." unique_id=956931091]
 autostart = true
 
-[node name="Node2D" type="Node2D" parent="." unique_id=1006166996]
+[node name="spawn_bullet" type="Node2D" parent="." unique_id=1006166996]
+position = Vector2(14, 0)
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=161108874]
 sprite_frames = SubResource("SpriteFrames_uraqg")
@@ -72,6 +114,16 @@ modulate = Color(1, 1, 1, 0.7058824)
 position = Vector2(-1.9073486e-06, 1.5497208e-06)
 scale = Vector2(1.78125, 1.8125)
 texture = ExtResource("2_7v4cw")
+
+[node name="icons" type="AnimatedSprite2D" parent="." unique_id=1697024950]
+position = Vector2(0, -29)
+sprite_frames = SubResource("SpriteFrames_n8uu4")
+animation = &"both"
+
+[node name="icons2" type="AnimatedSprite2D" parent="." unique_id=1831060597]
+position = Vector2(0, -29)
+sprite_frames = SubResource("SpriteFrames_n8uu4")
+animation = &"both"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_shape_entered" from="tower" to="." method="_on_tower_body_shape_entered"]

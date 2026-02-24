@@ -4,11 +4,20 @@ var enemy_pos: Vector2
 var enemies_in_range = []
 var target = get_nearest_enemy()
 var range_decreased = false
+var allowed_to_fog = true
+var attacking_stopped = false
+var allowed_to_freeze = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
-
+	$icons.visible = false
+	$icons.top_level = true
+	$icons.position.x = global_position.x
+	$icons.position.y = global_position.y - 30
+	$icons2.visible = false
+	$icons2.top_level = true
+	$icons2.position.x = global_position.x
+	$icons2.position.y = global_position.y - 30
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -17,7 +26,7 @@ func spawn_bullet():
 	print("SPAWN")
 	var new_bullet = bullet.instantiate()
 	new_bullet.dir=rotation
-	new_bullet.pos=$".".global_position
+	new_bullet.pos=$"spawn_bullet".global_position
 	new_bullet.rota=global_rotation
 	get_tree().current_scene.add_child(new_bullet)
 	
@@ -55,16 +64,45 @@ func _process(delta: float) -> void:
 	if target:
 		look_at(target.global_position)
 
-	if GlobalSignals.fog_on:
+
+	#FOG
+	if GlobalSignals.fog_on and allowed_to_fog:
 		range_decreased = true
 	if not GlobalSignals.fog_on:
 		range_decreased = false
 
 	if range_decreased:
 		$tower/CollisionShape2D.scale = Vector2(0.5, 0.5)
+		$icons2.visible = true
+		$icons2.play("both")
 	if not range_decreased:
 		$tower/CollisionShape2D.scale = Vector2(1, 1)
+		$icons2.visible = false
+
+
+
+	#SNOW STORM
+	if GlobalSignals.snow_on and allowed_to_freeze:
+		attacking_stopped = true
+	if not GlobalSignals.snow_on:
+		attacking_stopped = false
+
+	if attacking_stopped:
+		await get_tree().create_timer(2).timeout
+		$Timer.paused = true
+		$icons.visible = true
+		$icons.play("winter effect")
+		$AnimatedSprite2D.play("frozen gun")
+	if not attacking_stopped:
+		$AnimatedSprite2D.play("defalt 2")
+		$icons.visible = false
+		$Timer.paused = false
 
 func _add_light():
-	while true:
-		range_decreased = false
+	allowed_to_fog = false
+	range_decreased = false
+
+
+func _add_heat():
+	allowed_to_freeze = false
+	attacking_stopped = false
