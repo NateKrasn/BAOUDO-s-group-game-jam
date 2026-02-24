@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dm4ta267yv4d" path="res://game jam 1 art/Turret-Base.png" id="3_7v4cw"]
 [ext_resource type="Texture2D" uid="uid://e4sxnn2lpfw4" path="res://game jam 1 art/gun-Sheet.png" id="4_iwllq"]
 [ext_resource type="Texture2D" uid="uid://csu5hyq3itnvg" path="res://game jam 1 art/visual effect icons.png" id="6_suoaq"]
+[ext_resource type="Texture2D" uid="uid://be5s2n8fl1k7e" path="res://game jam 1 art/muzzele shock.png" id="8_uraqg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_suoaq"]
 atlas = ExtResource("2_4ihri")
@@ -84,6 +85,7 @@ collision_layer = 2
 script = ExtResource("1_ljl8x")
 
 [node name="Timer" type="Timer" parent="." unique_id=956931091]
+wait_time = 0.5
 autostart = true
 
 [node name="spawn_bullet" type="Node2D" parent="." unique_id=1006166996]
@@ -103,6 +105,11 @@ autoplay = "defalt 2"
 position = Vector2(-1, -1)
 shape = SubResource("CircleShape2D_suoaq")
 
+[node name="muzzele shock" type="Sprite2D" parent="." unique_id=967697176]
+position = Vector2(18.000002, -2.250001)
+scale = Vector2(0.71875, 0.67187494)
+texture = ExtResource("8_uraqg")
+
 [node name="tower" type="Area2D" parent="." unique_id=244548655]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tower" unique_id=2011007525]
@@ -116,12 +123,12 @@ scale = Vector2(1.78125, 1.8125)
 texture = ExtResource("2_7v4cw")
 
 [node name="icons" type="AnimatedSprite2D" parent="." unique_id=1697024950]
-position = Vector2(0, -29)
+position = Vector2(0, -32)
 sprite_frames = SubResource("SpriteFrames_n8uu4")
 animation = &"both"
 
 [node name="icons2" type="AnimatedSprite2D" parent="." unique_id=1831060597]
-position = Vector2(0, -29)
+position = Vector2(0, -31)
 sprite_frames = SubResource("SpriteFrames_n8uu4")
 animation = &"both"
 

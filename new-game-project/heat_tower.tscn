@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bjggfq0xgb73x"]
 
 [ext_resource type="Script" uid="uid://bn1mwmg7evc0h" path="res://heat_tower.gd" id="1_5oc4d"]
-[ext_resource type="Texture2D" uid="uid://m42ad8ht81tc" path="res://game jam 1 art/Light Tower.png" id="2_6gxx4"]
+[ext_resource type="Texture2D" uid="uid://fxbkgtp80g4g" path="res://game jam 1 art/heat tower.png" id="2_5oc4d"]
 [ext_resource type="Script" uid="uid://b752caw6yueob" path="res://range checker.gd" id="3_q1is4"]
 [ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="4_ix74h"]
 
@@ -11,9 +11,9 @@ radius = 41.19466
 [node name="heat tower" type="StaticBody2D" unique_id=970847785]
 script = ExtResource("1_5oc4d")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=793001420]
-modulate = Color(0.55012035, 0.3256183, 1.92523e-07, 1)
-texture = ExtResource("2_6gxx4")
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=793001420]
+modulate = Color(1, 0.7897133, 0.5821461, 1)
+texture = ExtResource("2_5oc4d")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=149247780]
 collision_mask = 2

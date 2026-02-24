@@ -7,7 +7,6 @@ var dir: float
 @export var bullet: PackedScene
 
 func _ready() -> void:
-	print("BULLET READY")
 	global_position = pos
 	global_rotation = rota
 func _physics_process(delta: float) -> void:

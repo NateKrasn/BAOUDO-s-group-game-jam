@@ -18,12 +18,12 @@ func _ready() -> void:
 	$icons2.top_level = true
 	$icons2.position.x = global_position.x
 	$icons2.position.y = global_position.y - 30
+	$"muzzele shock".visible = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 	
 func spawn_bullet():
-	print("SPAWN")
 	var new_bullet = bullet.instantiate()
 	new_bullet.dir=rotation
 	new_bullet.pos=$"spawn_bullet".global_position
@@ -41,7 +41,10 @@ func _on_tower_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index:
 func _on_timer_timeout() -> void:
 	var target = get_nearest_enemy()
 	if target:
+		$"muzzele shock".visible = true
 		spawn_bullet()
+		await get_tree().create_timer(0.1).timeout
+		$"muzzele shock".visible = false
 
 
 
@@ -61,7 +64,7 @@ func get_nearest_enemy():
 
 func _process(delta: float) -> void:
 	var target = get_nearest_enemy()
-	if target:
+	if target and not attacking_stopped:
 		look_at(target.global_position)
 
 
@@ -88,15 +91,16 @@ func _process(delta: float) -> void:
 		attacking_stopped = false
 
 	if attacking_stopped:
-		await get_tree().create_timer(2).timeout
+		await get_tree().create_timer(randf_range(1.0, 3.0)).timeout
 		$Timer.paused = true
 		$icons.visible = true
 		$icons.play("winter effect")
 		$AnimatedSprite2D.play("frozen gun")
 	if not attacking_stopped:
+		$Timer.paused = false
 		$AnimatedSprite2D.play("defalt 2")
 		$icons.visible = false
-		$Timer.paused = false
+
 
 func _add_light():
 	allowed_to_fog = false

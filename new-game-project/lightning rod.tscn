@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://crav44ernkrwf"]
+
+[ext_resource type="Texture2D" uid="uid://cd5rddokwt8lg" path="res://game jam 1 art/lightning rod.png" id="1_sxbvp"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=1980221619]
+texture = ExtResource("1_sxbvp")
