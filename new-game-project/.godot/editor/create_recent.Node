@@ -1,4 +1,8 @@
+Control
+Panel
 Sprite2D
+FlowContainer
+CanvasLayer
 CollisionShape2D
 Area2D
 AnimatedSprite2D
@@ -9,6 +13,3 @@ Node2D
 RemoteTransform2D
 CPUParticles2D
 ShapeCast2D
-Label
-Button
-AnimatableBody2D

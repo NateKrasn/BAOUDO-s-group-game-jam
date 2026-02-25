@@ -123,14 +123,23 @@ scale = Vector2(1.78125, 1.8125)
 texture = ExtResource("2_7v4cw")
 
 [node name="icons" type="AnimatedSprite2D" parent="." unique_id=1697024950]
-position = Vector2(0, -32)
+position = Vector2(0, -31)
 sprite_frames = SubResource("SpriteFrames_n8uu4")
-animation = &"both"
+animation = &"winter effect"
+autoplay = "winter effect"
 
 [node name="icons2" type="AnimatedSprite2D" parent="." unique_id=1831060597]
 position = Vector2(0, -31)
 sprite_frames = SubResource("SpriteFrames_n8uu4")
 animation = &"both"
+autoplay = "both"
+
+[node name="area" type="Panel" parent="." unique_id=1882518739]
+modulate = Color(1, 1, 1, 0)
+offset_left = -56.0
+offset_top = -56.0
+offset_right = 56.0
+offset_bottom = 56.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_shape_entered" from="tower" to="." method="_on_tower_body_shape_entered"]

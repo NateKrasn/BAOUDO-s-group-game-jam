@@ -11,14 +11,12 @@ var allowed_to_freeze = true
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$icons.visible = false
-	$icons.top_level = true
-	$icons.position.x = global_position.x
-	$icons.position.y = global_position.y - 30
 	$icons2.visible = false
-	$icons2.top_level = true
-	$icons2.position.x = global_position.x
-	$icons2.position.y = global_position.y - 30
+
+
 	$"muzzele shock".visible = false
+	get_parent().move_child(self, 2)
+	add_to_group("tower")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -48,6 +46,7 @@ func _on_timer_timeout() -> void:
 
 
 
+
 func _on_tower_body_shape_exited(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
 	enemies_in_range.erase(body)
 	
@@ -66,6 +65,10 @@ func _process(delta: float) -> void:
 	var target = get_nearest_enemy()
 	if target and not attacking_stopped:
 		look_at(target.global_position)
+	$icons.global_rotation = 0
+	$icons.global_position = Vector2(global_position.x, global_position.y - 30)
+	$icons2.global_rotation = 0
+	$icons2.global_position = Vector2(global_position.x, global_position.y - 30)
 
 
 	#FOG
@@ -77,7 +80,6 @@ func _process(delta: float) -> void:
 	if range_decreased:
 		$tower/CollisionShape2D.scale = Vector2(0.5, 0.5)
 		$icons2.visible = true
-		$icons2.play("both")
 	if not range_decreased:
 		$tower/CollisionShape2D.scale = Vector2(1, 1)
 		$icons2.visible = false
@@ -94,7 +96,6 @@ func _process(delta: float) -> void:
 		await get_tree().create_timer(randf_range(1.0, 3.0)).timeout
 		$Timer.paused = true
 		$icons.visible = true
-		$icons.play("winter effect")
 		$AnimatedSprite2D.play("frozen gun")
 	if not attacking_stopped:
 		$Timer.paused = false

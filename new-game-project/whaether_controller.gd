@@ -11,7 +11,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if ready1:
-		probability = randi_range(1, 1000)
+		probability = randi_range(1, 100)
 		if probability < 46:
 			$"fog warning".visible = true
 			await get_tree().create_timer(4).timeout
@@ -32,7 +32,7 @@ func _process(delta: float) -> void:
 			await get_tree().create_timer(5).timeout
 			GlobalSignals.snow_on = false
 			$snow.visible = false
-		elif probability < 1001:
+		elif probability < 101:
 			$"lightning warning".visible = true
 			await get_tree().create_timer(4.0).timeout
 			$"lightning warning".visible = false
@@ -56,8 +56,9 @@ func start_lightning(duration: float) -> void:
 	var end_time = Time.get_ticks_msec() + duration * 1000
 	while Time.get_ticks_msec() < end_time:
 		await get_tree().create_timer(1).timeout
-		strike_tower()
-		print("strike_tower")
+		if Time.get_ticks_msec() < end_time:
+			strike_tower()
+			print("strike_tower")
 
 func strike_tower() -> void:
 	var rods = get_tree().get_nodes_in_group("lightning_rod")
@@ -68,9 +69,12 @@ func strike_tower() -> void:
 		target = rods[randi() % rods.size()] # pick random rod
 	elif towers.size() > 0:
 		target = towers[randi() % towers.size()] # fallback to towers
-	
+
+
 	if target:
-		$"lightning VFX".position = target.position
+		$"lightning VFX".visible = false
+		$"lightning VFX".position = to_local(target.global_position)
+		await get_tree().process_frame  # wait one frame to ensure position is applied
 		$"lightning VFX".visible = true
 		await get_tree().create_timer(0.5).timeout
 		$"lightning VFX".visible = false

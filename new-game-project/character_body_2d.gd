@@ -14,4 +14,3 @@ func _process(delta: float) -> void:
 	
 func _take_damage(damage):
 	health-= 1 * damage
-	print("-1")

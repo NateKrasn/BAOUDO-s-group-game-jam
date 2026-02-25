@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://8moti2i8p3xp"]
+
+[ext_resource type="Script" uid="uid://dmda48dmr2udt" path="res://placing_panel.gd" id="1_w37m7"]
+[ext_resource type="PackedScene" uid="uid://bmaynbjvrhooj" path="res://bullet_tower_panal.tscn" id="2_ktt6o"]
+
+[node name="Control" type="Control" unique_id=905765377]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="placing panel" type="Panel" parent="." unique_id=1453454355]
+layout_direction = 1
+layout_mode = 0
+offset_left = 953.0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_w37m7")
+
+[node name="FlowContainer" type="FlowContainer" parent="placing panel" unique_id=928091035]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 225.0
+offset_bottom = 638.0
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+
+[node name="bullet tower" parent="placing panel/FlowContainer" unique_id=589607979 instance=ExtResource("2_ktt6o")]
+layout_mode = 2
+
+[connection signal="gui_input" from="placing panel/FlowContainer/bullet tower" to="placing panel" method="_on_bullet_tower_gui_input"]

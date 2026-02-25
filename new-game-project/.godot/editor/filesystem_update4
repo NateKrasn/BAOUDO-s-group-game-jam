@@ -8,3 +8,8 @@ res://character_body_2d.gd
 res://AOE tower.tscn
 res://aoe_tower.gd
 res://lightning rod.tscn
+res://global signals.gd
+res://placing_panel.gd
+res://bullet_tower_panal.tscn
+res://main_ui.tscn
+res://visual_bullet_scene.tscn
