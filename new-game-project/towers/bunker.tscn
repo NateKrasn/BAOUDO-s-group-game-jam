@@ -1,22 +1,13 @@
 [gd_scene format=3 uid="uid://bb6gquk5qkd2k"]
 
 [ext_resource type="Script" uid="uid://b4n7n6idfx8w3" path="res://towers/bunker.gd" id="1_g5fru"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_inis6"]
-load_path = "res://.godot/imported/bunker.png-108a50d4ccf35d8ae95ee7b6c1d1c844.ctex"
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6tas0"]
-size = Vector2(26, 26)
+[ext_resource type="Texture2D" uid="uid://cwhvas0tqi1yj" path="res://game jam 1 art/bunker.png" id="2_okb5f"]
 
 [node name="Bunker" type="Area2D" unique_id=12930690]
 script = ExtResource("1_g5fru")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=539470699]
-texture = SubResource("CompressedTexture2D_inis6")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2024677737]
-position = Vector2(-1, 3)
-shape = SubResource("RectangleShape2D_6tas0")
+texture = ExtResource("2_okb5f")
 
 [connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
 [connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

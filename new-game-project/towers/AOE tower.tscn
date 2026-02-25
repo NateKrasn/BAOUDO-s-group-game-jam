@@ -107,8 +107,8 @@ shape = SubResource("CircleShape2D_43hxt")
 
 [node name="attack VFX" type="Sprite2D" parent="attack area/CollisionShape2D" unique_id=2038655863]
 modulate = Color(1, 1, 1, 0.61960787)
-position = Vector2(-3.4868717e-06, -3.874302e-06)
-scale = Vector2(1.5, 1.5)
+position = Vector2(3.1888485e-06, 9.536743e-07)
+scale = Vector2(1.53125, 1.5312501)
 texture = ExtResource("2_3yk1a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=197846699]

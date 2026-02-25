@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cvbk3h6upn8pb"]
+
+[ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="1_kject"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3vhoc"]
+load_path = "res://.godot/imported/Drill Sheet.png-44440d2ca8c633b179be0a5fce5c5087.ctex"
+
+[node name="visual AOE tower scene" type="Node2D" unique_id=1137505167]
+position = Vector2(-1, 0)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1031074384]
+modulate = Color(1, 1, 1, 0.7058824)
+position = Vector2(-1.9073486e-06, -4.7683716e-07)
+scale = Vector2(1.53125, 1.5312499)
+texture = ExtResource("1_kject")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1446135343]
+position = Vector2(1, 2)
+texture = SubResource("CompressedTexture2D_3vhoc")
+hframes = 5

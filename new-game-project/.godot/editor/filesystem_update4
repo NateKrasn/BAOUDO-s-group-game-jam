@@ -1,2 +1,23 @@
 res://test_level.tscn
-res://whaether_controller.gd
+res://range_ui.tscn
+res://main_ui.tscn
+res://visuals for tower UI/placing_panel.gd
+res://enemy spawning script.gd
+res://visuals for tower UI/range_ui.tscn
+res://visuals for tower UI/main_ui.tscn
+res://towers/AOE tower.tscn
+res://visual_aoe_tower_scene.tscn
+res://visuals for tower UI and UI/placing_panel.gd
+res://visuals for tower UI and UI/main_ui.tscn
+res://visuals for tower UI and UI/global signals.gd
+res://visuals for tower UI and UI/range button.gd
+res://towers/aoe_tower.gd
+res://visuals for tower UI and UI/aoe_tower_panal.tscn
+res://visuals for tower UI and UI/visual_aoe_tower_scene.tscn
+res://towers/bullet_tower.tscn
+res://towers/bunker.tscn
+res://bullet_tower2.tscn
+res://towers/bullet.gd
+res://bullet_tower_2.gd
+res://towers/character_body_2d.gd
+res://towers/lightning rod.tscn

@@ -1,24 +1,24 @@
-[gd_scene format=3 uid="uid://b3c8c247v3hu4"]
+[gd_scene format=3 uid="uid://b550xoj08k6s8"]
 
-[ext_resource type="Script" uid="uid://dlmr46d7v7guy" path="res://towers/bullet_tower.gd" id="1_ljl8x"]
-[ext_resource type="Texture2D" uid="uid://bbdhftwr05r28" path="res://game jam 1 art/gun.png" id="2_4ihri"]
-[ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="2_7v4cw"]
-[ext_resource type="Script" uid="uid://b752caw6yueob" path="res://range checker.gd" id="2_03766"]
-[ext_resource type="Texture2D" uid="uid://dm4ta267yv4d" path="res://game jam 1 art/Turret-Base.png" id="3_7v4cw"]
-[ext_resource type="Texture2D" uid="uid://e4sxnn2lpfw4" path="res://game jam 1 art/gun-Sheet.png" id="4_iwllq"]
-[ext_resource type="Texture2D" uid="uid://csu5hyq3itnvg" path="res://game jam 1 art/visual effect icons.png" id="6_suoaq"]
-[ext_resource type="Texture2D" uid="uid://be5s2n8fl1k7e" path="res://game jam 1 art/muzzele shock.png" id="8_uraqg"]
+[ext_resource type="Texture2D" uid="uid://bbdhftwr05r28" path="res://game jam 1 art/gun.png" id="1_5mie6"]
+[ext_resource type="Script" uid="uid://dx73cb87pbst7" path="res://towers/bullet_tower_2.gd" id="1_cpktf"]
+[ext_resource type="Texture2D" uid="uid://dm4ta267yv4d" path="res://game jam 1 art/Turret-Base.png" id="2_cpktf"]
+[ext_resource type="Texture2D" uid="uid://e4sxnn2lpfw4" path="res://game jam 1 art/gun-Sheet.png" id="3_5uvhp"]
+[ext_resource type="Texture2D" uid="uid://be5s2n8fl1k7e" path="res://game jam 1 art/muzzele shock.png" id="4_575l6"]
+[ext_resource type="Script" uid="uid://b752caw6yueob" path="res://range checker.gd" id="5_hcvwd"]
+[ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="6_m6oco"]
+[ext_resource type="Texture2D" uid="uid://csu5hyq3itnvg" path="res://game jam 1 art/visual effect icons.png" id="7_587l7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_suoaq"]
-atlas = ExtResource("2_4ihri")
+atlas = ExtResource("1_5mie6")
 region = Rect2(0, 0, 32, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iwllq"]
-atlas = ExtResource("3_7v4cw")
+atlas = ExtResource("2_cpktf")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xrbsn"]
-atlas = ExtResource("4_iwllq")
+atlas = ExtResource("3_5uvhp")
 region = Rect2(32, 0, 32, 38)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uraqg"]
@@ -54,11 +54,11 @@ animations = [{
 radius = 68.06615
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uraqg"]
-atlas = ExtResource("6_suoaq")
+atlas = ExtResource("7_587l7")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_buywi"]
-atlas = ExtResource("6_suoaq")
+atlas = ExtResource("7_587l7")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_n8uu4"]
@@ -80,12 +80,12 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="bullet tower" type="StaticBody2D" unique_id=447542304]
+[node name="bullet tower2" type="StaticBody2D" unique_id=447542304]
 collision_layer = 2
-script = ExtResource("1_ljl8x")
+script = ExtResource("1_cpktf")
 
 [node name="Timer" type="Timer" parent="." unique_id=956931091]
-wait_time = 0.75
+wait_time = 0.4
 autostart = true
 
 [node name="spawn_bullet" type="Node2D" parent="." unique_id=1006166996]
@@ -108,19 +108,19 @@ shape = SubResource("CircleShape2D_suoaq")
 [node name="muzzele shock" type="Sprite2D" parent="." unique_id=967697176]
 position = Vector2(18.000002, -2.250001)
 scale = Vector2(0.71875, 0.67187494)
-texture = ExtResource("8_uraqg")
+texture = ExtResource("4_575l6")
 
 [node name="tower" type="Area2D" parent="." unique_id=244548655]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tower" unique_id=2011007525]
 shape = SubResource("CircleShape2D_03766")
-script = ExtResource("2_03766")
+script = ExtResource("5_hcvwd")
 
 [node name="Sprite2D" type="Sprite2D" parent="tower/CollisionShape2D" unique_id=1265470456]
 modulate = Color(1, 1, 1, 0.7058824)
-position = Vector2(-1.9073486e-06, 1.5497208e-06)
-scale = Vector2(1.78125, 1.8125)
-texture = ExtResource("2_7v4cw")
+position = Vector2(8.583069e-06, 1.4305115e-06)
+scale = Vector2(2.1875, 2.1875)
+texture = ExtResource("6_m6oco")
 
 [node name="icons" type="AnimatedSprite2D" parent="." unique_id=1697024950]
 position = Vector2(0, -31)

@@ -16,5 +16,5 @@ func _physics_process(delta: float) -> void:
 
 func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
 	if body.has_method("_take_damage"):
-		body._take_damage(3)
+		body._take_damage(1)
 		self.queue_free()

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bicinpn8046l8"]
+
+[ext_resource type="Texture2D" uid="uid://woaxf0uc7x77" path="res://game jam 1 art/Drill Sheet.png" id="1_4jokr"]
+
+[node name="AOE tower panal" type="Panel" unique_id=589607979]
+custom_minimum_size = Vector2(80, 80)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1083634780]
+position = Vector2(41, 42)
+scale = Vector2(2, 2)
+texture = ExtResource("1_4jokr")
+hframes = 5

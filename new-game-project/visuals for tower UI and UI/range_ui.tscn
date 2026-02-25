@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cy5k1vf77gg8m"]
 
-[ext_resource type="Script" uid="uid://cia0wuhi3aaiy" path="res://range button.gd" id="1_q72xt"]
+[ext_resource type="Script" uid="uid://cia0wuhi3aaiy" path="res://visuals for tower UI and UI/range button.gd" id="1_q72xt"]
 
 [node name="range UI" type="Control" unique_id=1355217930]
 layout_mode = 3

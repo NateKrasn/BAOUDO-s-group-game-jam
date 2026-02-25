@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var health = 15
+var health = 5
 signal die
 
 func _ready() -> void:

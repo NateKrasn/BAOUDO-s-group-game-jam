@@ -3,7 +3,7 @@ extends Button
 var pressed_alr: bool
 
 func _ready() -> void:
-	pressed_alr = true
+	pressed_alr = false
 
 func _on_pressed() -> void:
 	if not pressed_alr:

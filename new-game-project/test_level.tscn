@@ -3,11 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://44wvmi78jjlw" path="res://game jam 1 art/sprite sheet game jam.png" id="1_lnbra"]
 [ext_resource type="PackedScene" uid="uid://bb6gquk5qkd2k" path="res://towers/bunker.tscn" id="2_4ptq8"]
 [ext_resource type="Script" uid="uid://b4egef8qu6u3f" path="res://enemy spawning script.gd" id="2_f7g2b"]
-[ext_resource type="Script" uid="uid://cuebxerci0hby" path="res://whaether_controller.gd" id="4_4ptq8"]
-[ext_resource type="PackedScene" uid="uid://cy5k1vf77gg8m" path="res://range_ui.tscn" id="6_gbhdq"]
+[ext_resource type="Script" uid="uid://cuebxerci0hby" path="res://visuals for tower UI and UI/whaether_controller.gd" id="4_4ptq8"]
+[ext_resource type="PackedScene" uid="uid://cy5k1vf77gg8m" path="res://visuals for tower UI and UI/range_ui.tscn" id="6_gbhdq"]
 [ext_resource type="Texture2D" uid="uid://b2fcn3cu5nklc" path="res://game jam 1 art/lightning strike .png" id="8_6emce"]
 [ext_resource type="Texture2D" uid="uid://bsb0pa5ftckwh" path="res://game jam 1 art/snow warning - Copy.png" id="9_a25ih"]
-[ext_resource type="PackedScene" uid="uid://8moti2i8p3xp" path="res://main_ui.tscn" id="13_38et7"]
+[ext_resource type="PackedScene" uid="uid://8moti2i8p3xp" path="res://visuals for tower UI and UI/main_ui.tscn" id="13_38et7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6emce"]
 texture = ExtResource("1_lnbra")
