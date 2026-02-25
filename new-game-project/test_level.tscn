@@ -84,6 +84,10 @@ script = ExtResource("2_f7g2b")
 [node name="Bunker" parent="." unique_id=12930690 instance=ExtResource("2_4ptq8")]
 position = Vector2(536, 293)
 
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="." unique_id=972999460]
+energy = 0.15
+blend_mode = 1
+
 [node name="whaether controller" type="Node2D" parent="." unique_id=1459808361]
 script = ExtResource("4_4ptq8")
 
@@ -107,7 +111,7 @@ scale_amount_max = 3.0
 [node name="storm" type="DirectionalLight2D" parent="whaether controller" unique_id=1232336692]
 visible = false
 color = Color(1, 1, 0.19215687, 1)
-energy = 0.7
+energy = 0.55
 blend_mode = 1
 
 [node name="fog warning" type="Sprite2D" parent="whaether controller" unique_id=1754488939]

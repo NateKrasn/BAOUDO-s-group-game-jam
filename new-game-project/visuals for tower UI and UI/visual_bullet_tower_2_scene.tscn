@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://t30ww3jeut2s"]
+
+[ext_resource type="Texture2D" uid="uid://bbdhftwr05r28" path="res://game jam 1 art/gun.png" id="1_28lme"]
+[ext_resource type="Texture2D" uid="uid://dm4ta267yv4d" path="res://game jam 1 art/Turret-Base.png" id="2_ba1t7"]
+[ext_resource type="Texture2D" uid="uid://e4sxnn2lpfw4" path="res://game jam 1 art/gun-Sheet.png" id="3_71tep"]
+[ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="4_kfnp4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_suoaq"]
+atlas = ExtResource("1_28lme")
+region = Rect2(0, 0, 32, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwllq"]
+atlas = ExtResource("2_ba1t7")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrbsn"]
+atlas = ExtResource("3_71tep")
+region = Rect2(32, 0, 32, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_240ca"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_suoaq")
+}],
+"loop": true,
+"name": &"defalt 2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iwllq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrbsn")
+}],
+"loop": true,
+"name": &"frozen gun",
+"speed": 5.0
+}]
+
+[node name="visual bullet tower2 scene" type="Node2D" unique_id=1611849579]
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1931841294]
+sprite_frames = SubResource("SpriteFrames_240ca")
+autoplay = "default"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1169591455]
+sprite_frames = SubResource("SpriteFrames_240ca")
+animation = &"defalt 2"
+autoplay = "defalt 2"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1472575929]
+modulate = Color(1, 1, 1, 0.7058824)
+position = Vector2(8.583069e-06, 1.4305115e-06)
+scale = Vector2(2.1875, 2.1875)
+texture = ExtResource("4_kfnp4")

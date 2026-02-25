@@ -24,7 +24,6 @@ func _on_detection_area_body_shape_exited(body_rid: RID, body: Node2D, body_shap
 
 
 func _on_timer_timeout() -> void:
-	if allowed_to_attack:
 		$"attack area/CollisionShape2D".disabled = false
 		$AnimatedSprite2D.play("attacking")
 		$"attack area/CollisionShape2D/attack VFX".visible = true
@@ -84,4 +83,4 @@ func _add_heat():
 
 func _on_attack_area_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
 	if body.has_method("_take_damage"):
-		body._take_damage(3)
+		body._take_damage(1)

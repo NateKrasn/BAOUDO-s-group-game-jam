@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://pj0hjbftxk47"]
+
+[ext_resource type="Texture2D" uid="uid://fxbkgtp80g4g" path="res://game jam 1 art/heat tower.png" id="1_pwa22"]
+[ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="2_1ulqj"]
+
+[node name="visual heat tower" type="Node2D" unique_id=54589372]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2133565660]
+modulate = Color(1, 1, 1, 0.7058824)
+position = Vector2(2.1457672e-06, 0.1578927)
+scale = Vector2(1.3125001, 1.3075658)
+texture = ExtResource("2_1ulqj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1439800408]
+modulate = Color(1, 0.7897133, 0.5821461, 1)
+texture = ExtResource("1_pwa22")

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dn643a8fi6yt4"]
+
+[ext_resource type="PackedScene" uid="uid://crav44ernkrwf" path="res://towers/lightning rod.tscn" id="1_l1rx7"]
+
+[node name="visual lightning rod" type="Node2D" unique_id=942936098]
+
+[node name="Sprite2D" parent="." unique_id=1980221619 instance=ExtResource("1_l1rx7")]
+script = null

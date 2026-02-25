@@ -3,6 +3,11 @@
 [ext_resource type="Script" uid="uid://dmda48dmr2udt" path="res://visuals for tower UI and UI/placing_panel.gd" id="1_w37m7"]
 [ext_resource type="PackedScene" uid="uid://bmaynbjvrhooj" path="res://visuals for tower UI and UI/bullet_tower_panal.tscn" id="2_ktt6o"]
 [ext_resource type="PackedScene" uid="uid://bicinpn8046l8" path="res://visuals for tower UI and UI/aoe_tower_panal.tscn" id="3_k4u2p"]
+[ext_resource type="PackedScene" uid="uid://cmh54x67rraqc" path="res://visuals for tower UI and UI/bullet_tower_2_panal.tscn" id="4_b6drp"]
+[ext_resource type="PackedScene" uid="uid://dnhglbp2pxemj" path="res://visuals for tower UI and UI/aoe_tower_2_panal.tscn" id="5_q0xr7"]
+[ext_resource type="PackedScene" uid="uid://cdigjahr4sw87" path="res://visuals for tower UI and UI/lightning panel.tscn" id="6_d66s8"]
+[ext_resource type="PackedScene" uid="uid://dk6opwxve63d4" path="res://visuals for tower UI and UI/heat_tower_panel.tscn" id="7_tb4cu"]
+[ext_resource type="PackedScene" uid="uid://c0wisetocipx0" path="res://visuals for tower UI and UI/light_panel.tscn" id="8_tjmn6"]
 
 [node name="Control" type="Control" unique_id=905765377]
 layout_mode = 3
@@ -35,5 +40,25 @@ layout_mode = 2
 [node name="AOE tower panal" parent="placing panel/FlowContainer" unique_id=1895748486 instance=ExtResource("3_k4u2p")]
 layout_mode = 2
 
+[node name="bullet tower2 panal" parent="placing panel/FlowContainer" unique_id=267940594 instance=ExtResource("4_b6drp")]
+layout_mode = 2
+
+[node name="AOE tower2 panal" parent="placing panel/FlowContainer" unique_id=931870247 instance=ExtResource("5_q0xr7")]
+layout_mode = 2
+
+[node name="bullet tower2 panal2" parent="placing panel/FlowContainer" unique_id=1982086283 instance=ExtResource("6_d66s8")]
+layout_mode = 2
+
+[node name="heat tower panel" parent="placing panel/FlowContainer" unique_id=519851284 instance=ExtResource("7_tb4cu")]
+layout_mode = 2
+
+[node name="light panel" parent="placing panel/FlowContainer" unique_id=1632384826 instance=ExtResource("8_tjmn6")]
+layout_mode = 2
+
 [connection signal="gui_input" from="placing panel/FlowContainer/bullet tower" to="placing panel" method="_on_bullet_tower_gui_input"]
 [connection signal="gui_input" from="placing panel/FlowContainer/AOE tower panal" to="placing panel" method="_on_aoe_tower_panal_gui_input"]
+[connection signal="gui_input" from="placing panel/FlowContainer/bullet tower2 panal" to="placing panel" method="_on_bullet_tower_2_panal_gui_input"]
+[connection signal="gui_input" from="placing panel/FlowContainer/AOE tower2 panal" to="placing panel" method="_on_aoe_tower_2_panal_gui_input"]
+[connection signal="gui_input" from="placing panel/FlowContainer/bullet tower2 panal2" to="placing panel" method="_on_bullet_tower_2_panal_2_gui_input"]
+[connection signal="gui_input" from="placing panel/FlowContainer/heat tower panel" to="placing panel" method="_on_heat_tower_panel_gui_input"]
+[connection signal="gui_input" from="placing panel/FlowContainer/light panel" to="placing panel" method="_on_light_panel_gui_input"]

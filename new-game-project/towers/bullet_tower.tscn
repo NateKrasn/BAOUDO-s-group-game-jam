@@ -1,31 +1,31 @@
 [gd_scene format=3 uid="uid://b3c8c247v3hu4"]
 
 [ext_resource type="Script" uid="uid://dlmr46d7v7guy" path="res://towers/bullet_tower.gd" id="1_ljl8x"]
-[ext_resource type="Texture2D" uid="uid://bbdhftwr05r28" path="res://game jam 1 art/gun.png" id="2_4ihri"]
 [ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="2_7v4cw"]
 [ext_resource type="Script" uid="uid://b752caw6yueob" path="res://range checker.gd" id="2_03766"]
+[ext_resource type="Texture2D" uid="uid://c5oltxt0rilpu" path="res://game jam 1 art/gun1.png" id="2_omxrm"]
 [ext_resource type="Texture2D" uid="uid://dm4ta267yv4d" path="res://game jam 1 art/Turret-Base.png" id="3_7v4cw"]
-[ext_resource type="Texture2D" uid="uid://e4sxnn2lpfw4" path="res://game jam 1 art/gun-Sheet.png" id="4_iwllq"]
+[ext_resource type="Texture2D" uid="uid://cpqer36t24s06" path="res://game jam 1 art/gun1-Sheet.png" id="4_omxrm"]
 [ext_resource type="Texture2D" uid="uid://csu5hyq3itnvg" path="res://game jam 1 art/visual effect icons.png" id="6_suoaq"]
 [ext_resource type="Texture2D" uid="uid://be5s2n8fl1k7e" path="res://game jam 1 art/muzzele shock.png" id="8_uraqg"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_suoaq"]
-atlas = ExtResource("2_4ihri")
-region = Rect2(0, 0, 32, 38)
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6fps"]
+atlas = ExtResource("2_omxrm")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iwllq"]
 atlas = ExtResource("3_7v4cw")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xrbsn"]
-atlas = ExtResource("4_iwllq")
-region = Rect2(32, 0, 32, 38)
+[sub_resource type="AtlasTexture" id="AtlasTexture_l2jl5"]
+atlas = ExtResource("4_omxrm")
+region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uraqg"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_suoaq")
+"texture": SubResource("AtlasTexture_n6fps")
 }],
 "loop": true,
 "name": &"defalt 2",
@@ -41,7 +41,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xrbsn")
+"texture": SubResource("AtlasTexture_l2jl5")
 }],
 "loop": true,
 "name": &"frozen gun",
@@ -51,7 +51,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_suoaq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_03766"]
-radius = 68.06615
+radius = 56.008926
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uraqg"]
 atlas = ExtResource("6_suoaq")
@@ -96,9 +96,11 @@ sprite_frames = SubResource("SpriteFrames_uraqg")
 autoplay = "default"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1271075293]
+position = Vector2(4, -0.21662903)
 rotation = 1.5707964
+scale = Vector2(1.0760393, 1)
 sprite_frames = SubResource("SpriteFrames_uraqg")
-animation = &"defalt 2"
+animation = &"frozen gun"
 autoplay = "defalt 2"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=51557197]

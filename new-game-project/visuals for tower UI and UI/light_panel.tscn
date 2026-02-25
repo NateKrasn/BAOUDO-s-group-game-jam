@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c0wisetocipx0"]
+
+[ext_resource type="Texture2D" uid="uid://m42ad8ht81tc" path="res://game jam 1 art/Light Tower.png" id="1_rr2l1"]
+
+[node name="light panel" type="Panel" unique_id=1632384826]
+custom_minimum_size = Vector2(80, 80)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=903628838]
+position = Vector2(40, 43)
+scale = Vector2(2, 2)
+texture = ExtResource("1_rr2l1")

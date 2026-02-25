@@ -22,6 +22,8 @@ GlobalSignals="*uid://dkms5s1yfx7wr"
 
 tower=""
 lightning_rod=""
+heat_area=""
+light_tower=""
 
 [physics]
 

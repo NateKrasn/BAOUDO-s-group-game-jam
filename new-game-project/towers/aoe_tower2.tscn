@@ -1,0 +1,162 @@
+[gd_scene format=3 uid="uid://di2wdcwgoiylc"]
+
+[ext_resource type="Script" uid="uid://dxrtvr5vto6nu" path="res://towers/aoe_tower_2.gd" id="1_7oddj"]
+[ext_resource type="Texture2D" uid="uid://b0ixmgw2b8g72" path="res://game jam 1 art/attack drill VFX.png" id="2_llo8c"]
+[ext_resource type="Texture2D" uid="uid://bvp7qldvnjewg" path="res://game jam 1 art/big aoe.png" id="3_7oddj"]
+[ext_resource type="Script" uid="uid://b752caw6yueob" path="res://range checker.gd" id="4_vl30j"]
+[ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="5_w0sq3"]
+[ext_resource type="Texture2D" uid="uid://csu5hyq3itnvg" path="res://game jam 1 art/visual effect icons.png" id="6_s17ym"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7oddj"]
+radius = 65.27634
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_llo8c"]
+atlas = ExtResource("3_7oddj")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crosx"]
+atlas = ExtResource("3_7oddj")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vl30j"]
+atlas = ExtResource("3_7oddj")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0sq3"]
+atlas = ExtResource("3_7oddj")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_645w0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_llo8c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crosx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vl30j")
+}],
+"loop": true,
+"name": &"attacking",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w0sq3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s17ym"]
+atlas = ExtResource("3_7oddj")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j435i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s17ym")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_llo8c"]
+radius = 65.192024
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plmv0"]
+size = Vector2(26, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uraqg"]
+atlas = ExtResource("6_s17ym")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_buywi"]
+atlas = ExtResource("6_s17ym")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lr6km"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uraqg")
+}],
+"loop": true,
+"name": &"both",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_buywi")
+}],
+"loop": true,
+"name": &"winter effect",
+"speed": 5.0
+}]
+
+[node name="aoe tower2" type="StaticBody2D" unique_id=1135499846]
+collision_layer = 2
+script = ExtResource("1_7oddj")
+
+[node name="attack area" type="Area2D" parent="." unique_id=1683653502]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attack area" unique_id=2115485854]
+shape = SubResource("CircleShape2D_7oddj")
+
+[node name="attack VFX" type="Sprite2D" parent="attack area/CollisionShape2D" unique_id=2038655863]
+modulate = Color(1, 1, 1, 0.61960787)
+position = Vector2(-3.8146973e-06, 9.775162e-06)
+scale = Vector2(2.0937498, 2.09375)
+texture = ExtResource("2_llo8c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=197846699]
+modulate = Color(1, 0.77115303, 0.79306734, 1)
+sprite_frames = SubResource("SpriteFrames_645w0")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="frozen x-vfx" type="AnimatedSprite2D" parent="." unique_id=106686772]
+visible = false
+modulate = Color(1, 0.77254903, 0.7921569, 1)
+sprite_frames = SubResource("SpriteFrames_j435i")
+autoplay = "default"
+
+[node name="detection area" type="Area2D" parent="." unique_id=751731492]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection area" unique_id=1636623106]
+shape = SubResource("CircleShape2D_llo8c")
+script = ExtResource("4_vl30j")
+
+[node name="Sprite2D" type="Sprite2D" parent="detection area/CollisionShape2D" unique_id=473187653]
+modulate = Color(1, 1, 1, 0.7058824)
+position = Vector2(-8.583069e-06, 9.536743e-07)
+scale = Vector2(2.09375, 2.09375)
+texture = ExtResource("5_w0sq3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1597202262]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_plmv0")
+
+[node name="icons" type="AnimatedSprite2D" parent="." unique_id=1555632823]
+position = Vector2(0, -32)
+sprite_frames = SubResource("SpriteFrames_lr6km")
+animation = &"both"
+
+[node name="icons2" type="AnimatedSprite2D" parent="." unique_id=396789968]
+position = Vector2(0, -31)
+sprite_frames = SubResource("SpriteFrames_lr6km")
+animation = &"both"
+
+[node name="Timer" type="Timer" parent="." unique_id=168321180]
+wait_time = 2.0
+autostart = true
+
+[connection signal="body_shape_entered" from="attack area" to="." method="_on_attack_area_body_shape_entered"]
+[connection signal="body_shape_entered" from="detection area" to="." method="_on_detection_area_body_shape_entered"]
+[connection signal="body_shape_exited" from="detection area" to="." method="_on_detection_area_body_shape_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dk6opwxve63d4"]
+
+[ext_resource type="Texture2D" uid="uid://fxbkgtp80g4g" path="res://game jam 1 art/heat tower.png" id="1_fw2f4"]
+
+[node name="heat tower panel" type="Panel" unique_id=519851284]
+custom_minimum_size = Vector2(80, 80)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1034019469]
+modulate = Color(1, 0.7897133, 0.5821461, 1)
+position = Vector2(39, 39)
+scale = Vector2(2, 2)
+texture = ExtResource("1_fw2f4")

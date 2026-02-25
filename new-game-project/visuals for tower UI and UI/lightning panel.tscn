@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cdigjahr4sw87"]
+
+[ext_resource type="Texture2D" uid="uid://cd5rddokwt8lg" path="res://game jam 1 art/lightning rod.png" id="1_1nfad"]
+
+[node name="bullet tower2 panal" type="Panel" unique_id=589607979]
+custom_minimum_size = Vector2(80, 80)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1083634780]
+position = Vector2(44, 40)
+scale = Vector2(2, 2)
+texture = ExtResource("1_1nfad")

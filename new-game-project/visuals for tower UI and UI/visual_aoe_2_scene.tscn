@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bnsap0asyg85u"]
+
+[ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="1_ulae5"]
+[ext_resource type="Texture2D" uid="uid://bvp7qldvnjewg" path="res://game jam 1 art/big aoe.png" id="2_ktfln"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_llo8c"]
+atlas = ExtResource("2_ktfln")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crosx"]
+atlas = ExtResource("2_ktfln")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vl30j"]
+atlas = ExtResource("2_ktfln")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0sq3"]
+atlas = ExtResource("2_ktfln")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h4hul"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_llo8c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crosx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vl30j")
+}],
+"loop": true,
+"name": &"attacking",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w0sq3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="visual aoe2 scene" type="Node2D" unique_id=480401983]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1249062739]
+modulate = Color(1, 1, 1, 0.7058824)
+position = Vector2(-8.583069e-06, 9.536743e-07)
+scale = Vector2(2.09375, 2.09375)
+texture = ExtResource("1_ulae5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2080296856]
+modulate = Color(1, 0.77115303, 0.79306734, 1)
+sprite_frames = SubResource("SpriteFrames_h4hul")
+animation = &"idle"

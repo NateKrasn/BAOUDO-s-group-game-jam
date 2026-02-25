@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://8a4b0caufn6y"]
+
+[ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="1_qcuj5"]
+[ext_resource type="Texture2D" uid="uid://m42ad8ht81tc" path="res://game jam 1 art/Light Tower.png" id="2_3h6bh"]
+
+[node name="visual light tower" type="Node2D" unique_id=624891283]
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=2083841815]
+modulate = Color(1, 1, 1, 0.7058824)
+position = Vector2(2.1457672e-06, 0.1578927)
+scale = Vector2(1.3125001, 1.3075658)
+texture = ExtResource("1_qcuj5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1749006668]
+texture = ExtResource("2_3h6bh")

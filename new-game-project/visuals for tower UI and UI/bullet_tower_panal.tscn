@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bmaynbjvrhooj"]
 
 [ext_resource type="Texture2D" uid="uid://dm4ta267yv4d" path="res://game jam 1 art/Turret-Base.png" id="1_61adc"]
-[ext_resource type="Texture2D" uid="uid://bbdhftwr05r28" path="res://game jam 1 art/gun.png" id="2_xtdtw"]
+[ext_resource type="Texture2D" uid="uid://c5oltxt0rilpu" path="res://game jam 1 art/gun1.png" id="2_s483l"]
 
 [node name="bullet tower panal" type="Panel" unique_id=589607979]
 custom_minimum_size = Vector2(80, 80)
@@ -14,6 +14,6 @@ scale = Vector2(2, 2)
 texture = ExtResource("1_61adc")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1307199972]
-position = Vector2(41, 40)
-scale = Vector2(2, 2)
-texture = ExtResource("2_xtdtw")
+position = Vector2(40.5, 33)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("2_s483l")
