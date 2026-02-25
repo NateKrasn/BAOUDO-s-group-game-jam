@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bjggfq0xgb73x"]
 
-[ext_resource type="Script" uid="uid://bn1mwmg7evc0h" path="res://heat_tower.gd" id="1_5oc4d"]
+[ext_resource type="Script" uid="uid://bn1mwmg7evc0h" path="res://towers/heat_tower.gd" id="1_5oc4d"]
 [ext_resource type="Texture2D" uid="uid://fxbkgtp80g4g" path="res://game jam 1 art/heat tower.png" id="2_5oc4d"]
 [ext_resource type="Script" uid="uid://b752caw6yueob" path="res://range checker.gd" id="3_q1is4"]
 [ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="4_ix74h"]

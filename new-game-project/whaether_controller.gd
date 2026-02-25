@@ -11,7 +11,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if ready1:
-		probability = randi_range(1, 100)
+		probability = randi_range(1, 1000)
 		if probability < 46:
 			$"fog warning".visible = true
 			await get_tree().create_timer(4).timeout
@@ -32,7 +32,7 @@ func _process(delta: float) -> void:
 			await get_tree().create_timer(5).timeout
 			GlobalSignals.snow_on = false
 			$snow.visible = false
-		elif probability < 101:
+		elif probability < 1001:
 			$"lightning warning".visible = true
 			await get_tree().create_timer(4.0).timeout
 			$"lightning warning".visible = false

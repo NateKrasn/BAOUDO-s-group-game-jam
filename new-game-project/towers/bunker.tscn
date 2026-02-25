@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://bb6gquk5qkd2k"]
 
-[ext_resource type="Script" uid="uid://b4n7n6idfx8w3" path="res://bunker.gd" id="1_g5fru"]
-[ext_resource type="Texture2D" uid="uid://drec0xypc3p6l" path="res://bunker.png" id="2_rlg4x"]
+[ext_resource type="Script" uid="uid://b4n7n6idfx8w3" path="res://towers/bunker.gd" id="1_g5fru"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_inis6"]
+load_path = "res://.godot/imported/bunker.png-108a50d4ccf35d8ae95ee7b6c1d1c844.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6tas0"]
 size = Vector2(26, 26)
@@ -10,7 +12,7 @@ size = Vector2(26, 26)
 script = ExtResource("1_g5fru")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=539470699]
-texture = ExtResource("2_rlg4x")
+texture = SubResource("CompressedTexture2D_inis6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2024677737]
 position = Vector2(-1, 3)

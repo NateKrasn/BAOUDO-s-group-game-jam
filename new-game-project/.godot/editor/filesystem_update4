@@ -1,15 +1,2 @@
-res://whaether_controller.gd
-res://bullet_tower.tscn
-res://heat_tower.tscn
 res://test_level.tscn
-res://bullet_tower.gd
-res://bullet.gd
-res://character_body_2d.gd
-res://AOE tower.tscn
-res://aoe_tower.gd
-res://lightning rod.tscn
-res://global signals.gd
-res://placing_panel.gd
-res://bullet_tower_panal.tscn
-res://main_ui.tscn
-res://visual_bullet_scene.tscn
+res://whaether_controller.gd

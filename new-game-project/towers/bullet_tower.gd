@@ -1,5 +1,5 @@
 extends StaticBody2D
-var bullet= preload("res://bullet.tscn")
+var bullet= preload("res://towers/bullet.tscn")
 var enemy_pos: Vector2
 var enemies_in_range = []
 var target = get_nearest_enemy()

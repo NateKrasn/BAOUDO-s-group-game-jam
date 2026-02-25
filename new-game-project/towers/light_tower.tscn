@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bwvjq061pgsnk"]
 
 [ext_resource type="Script" uid="uid://b752caw6yueob" path="res://range checker.gd" id="1_7elh4"]
-[ext_resource type="Script" uid="uid://b71671512l28a" path="res://light_tower.gd" id="1_f5vws"]
+[ext_resource type="Script" uid="uid://b71671512l28a" path="res://towers/light_tower.gd" id="1_f5vws"]
 [ext_resource type="Texture2D" uid="uid://m42ad8ht81tc" path="res://game jam 1 art/Light Tower.png" id="1_lkc4m"]
 [ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="2_f5vws"]
 

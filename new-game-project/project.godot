@@ -13,7 +13,6 @@ config_version=5
 config/name="BAUDO's game jam"
 run/main_scene="uid://di8ijyr3be2f5"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [autoload]
 

@@ -1,7 +1,7 @@
 extends Panel
 
 
-@onready var tower_scene = preload("res://bullet_tower.tscn")
+@onready var tower_scene = preload("res://towers/bullet_tower.tscn")
 @onready var visual_tower_scene = preload("res://visual_bullet_scene.tscn")
 var tempTower = null
 var realTower = null

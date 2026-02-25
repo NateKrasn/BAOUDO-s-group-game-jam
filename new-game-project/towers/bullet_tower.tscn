@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b3c8c247v3hu4"]
 
-[ext_resource type="Script" uid="uid://dlmr46d7v7guy" path="res://bullet_tower.gd" id="1_ljl8x"]
+[ext_resource type="Script" uid="uid://dlmr46d7v7guy" path="res://towers/bullet_tower.gd" id="1_ljl8x"]
 [ext_resource type="Texture2D" uid="uid://bbdhftwr05r28" path="res://game jam 1 art/gun.png" id="2_4ihri"]
 [ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="2_7v4cw"]
 [ext_resource type="Script" uid="uid://b752caw6yueob" path="res://range checker.gd" id="2_03766"]
