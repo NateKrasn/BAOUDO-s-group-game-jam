@@ -68,6 +68,8 @@ func _process(delta: float) -> void:
 	$icons.global_position = Vector2(global_position.x, global_position.y - 30)
 	$icons2.global_rotation = 0
 	$icons2.global_position = Vector2(global_position.x, global_position.y - 30)
+	$"place holder".global_rotation = 0
+	$"place holder".global_position = Vector2(global_position.x + -10, global_position.y - 14)
 
 	# FOG
 	range_decreased = GlobalSignals.fog_on and not lit
@@ -84,3 +86,8 @@ func _process(delta: float) -> void:
 		$Timer.paused = false
 		$icons.visible = false
 		$AnimatedSprite2D.play("defalt 2")
+
+
+func _on_button_pressed() -> void:
+	GlobalSignals.currency += 70
+	self.queue_free()

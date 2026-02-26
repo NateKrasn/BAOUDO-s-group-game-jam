@@ -32,4 +32,5 @@ func _process(delta: float) -> void:
 
 
 func _on_character_body_2d_die() -> void:
+	GlobalSignals.currency += 10
 	self.queue_free()

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://8moti2i8p3xp"]
 
+[ext_resource type="Script" uid="uid://b8kmjlhta5j5y" path="res://visuals for tower UI and UI/main_ui.gd" id="1_07h6w"]
 [ext_resource type="Script" uid="uid://dmda48dmr2udt" path="res://visuals for tower UI and UI/placing_panel.gd" id="1_w37m7"]
 [ext_resource type="PackedScene" uid="uid://bmaynbjvrhooj" path="res://visuals for tower UI and UI/bullet_tower_panal.tscn" id="2_ktt6o"]
 [ext_resource type="PackedScene" uid="uid://bicinpn8046l8" path="res://visuals for tower UI and UI/aoe_tower_panal.tscn" id="3_k4u2p"]
@@ -8,6 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://cdigjahr4sw87" path="res://visuals for tower UI and UI/lightning panel.tscn" id="6_d66s8"]
 [ext_resource type="PackedScene" uid="uid://dk6opwxve63d4" path="res://visuals for tower UI and UI/heat_tower_panel.tscn" id="7_tb4cu"]
 [ext_resource type="PackedScene" uid="uid://c0wisetocipx0" path="res://visuals for tower UI and UI/light_panel.tscn" id="8_tjmn6"]
+[ext_resource type="Script" uid="uid://cia0wuhi3aaiy" path="res://visuals for tower UI and UI/range button.gd" id="9_8akqn"]
+[ext_resource type="Script" uid="uid://dptm6x0lss8t5" path="res://visuals for tower UI and UI/currency_label.gd" id="10_we0ls"]
+[ext_resource type="Texture2D" uid="uid://bc58ibglgit6t" path="res://game jam 1 art/scrap.png" id="11_uesp2"]
+[ext_resource type="Script" uid="uid://bm2k081jconlf" path="res://visuals for tower UI and UI/sell_button.gd" id="13_820km"]
 
 [node name="Control" type="Control" unique_id=905765377]
 layout_mode = 3
@@ -16,6 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_07h6w")
 
 [node name="placing panel" type="Panel" parent="." unique_id=1453454355]
 layout_direction = 1
@@ -55,6 +61,52 @@ layout_mode = 2
 [node name="light panel" parent="placing panel/FlowContainer" unique_id=1632384826 instance=ExtResource("8_tjmn6")]
 layout_mode = 2
 
+[node name="range button" type="Button" parent="." unique_id=197051444]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 0
+offset_left = 13.0
+offset_top = 590.0
+offset_right = 172.67743
+offset_bottom = 635.0
+theme_override_font_sizes/font_size = 20
+text = "Show Ranges"
+script = ExtResource("9_8akqn")
+
+[node name="currency label" type="Label" parent="." unique_id=137009160]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 4.0
+offset_right = 123.0
+offset_bottom = 49.0
+theme_override_font_sizes/font_size = 32
+text = "5000"
+script = ExtResource("10_we0ls")
+
+[node name="Sprite2D" type="Sprite2D" parent="currency label" unique_id=71741780]
+position = Vector2(-25, 21)
+scale = Vector2(1.5624999, 1.5624999)
+texture = ExtResource("11_uesp2")
+
+[node name="sell button" type="Button" parent="." unique_id=1489523459]
+layout_mode = 0
+offset_left = 446.0
+offset_top = 582.0
+offset_right = 558.0
+offset_bottom = 635.0
+theme_override_font_sizes/font_size = 32
+text = "SELL"
+script = ExtResource("13_820km")
+
+[node name="buy button" type="Button" parent="." unique_id=965469026]
+layout_mode = 0
+offset_left = 570.0
+offset_top = 582.0
+offset_right = 682.0
+offset_bottom = 635.0
+theme_override_font_sizes/font_size = 32
+text = "BUY
+"
+
 [connection signal="gui_input" from="placing panel/FlowContainer/bullet tower" to="placing panel" method="_on_bullet_tower_gui_input"]
 [connection signal="gui_input" from="placing panel/FlowContainer/AOE tower panal" to="placing panel" method="_on_aoe_tower_panal_gui_input"]
 [connection signal="gui_input" from="placing panel/FlowContainer/bullet tower2 panal" to="placing panel" method="_on_bullet_tower_2_panal_gui_input"]
@@ -62,3 +114,6 @@ layout_mode = 2
 [connection signal="gui_input" from="placing panel/FlowContainer/bullet tower2 panal2" to="placing panel" method="_on_bullet_tower_2_panal_2_gui_input"]
 [connection signal="gui_input" from="placing panel/FlowContainer/heat tower panel" to="placing panel" method="_on_heat_tower_panel_gui_input"]
 [connection signal="gui_input" from="placing panel/FlowContainer/light panel" to="placing panel" method="_on_light_panel_gui_input"]
+[connection signal="pressed" from="range button" to="range button" method="_on_pressed"]
+[connection signal="pressed" from="sell button" to="sell button" method="_on_pressed"]
+[connection signal="pressed" from="buy button" to="." method="_on_buy_button_pressed"]

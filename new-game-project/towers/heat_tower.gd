@@ -4,3 +4,8 @@ func _ready() -> void:
 	add_to_group("heat_tower")
 	add_to_group("tower")
 	get_parent().move_child(self, 2)
+
+
+func _on_button_pressed() -> void:
+	GlobalSignals.currency += 45
+	self.queue_free()

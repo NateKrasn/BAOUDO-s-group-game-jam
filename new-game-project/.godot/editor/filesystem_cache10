@@ -1,43 +1,44 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1772063430
+::res://::1772066064
 enemy spawning script.gd::GDScript::4430526419694730117::1772026688::0::1::::<>Path2D<><>0<>0<><>::
 range checker.gd::GDScript::4696037978551493485::1771887626::0::1::::<>CollisionShape2D<><>0<>0<><>::
 test enemy.tscn::PackedScene::7274826341069994968::1771983881::0::1::::<><><>0<>0<><>::res://test_enemy.gd<>uid://bcob1y7cxtafv::::res://game jam 1 art/Full-Deer-Sheet.png<>uid://cuoayd5nkv7bk::::res://towers/character_body_2d.gd
 test_enemy.gd::GDScript::-1::1771887627::0::1::::test_enemy<>PathFollow2D<><>0<>0<><>::
 test_level.gd::GDScript::9069149618150958457::1771887627::0::1::::<>Node2D<><>0<>0<><>::
-test_level.tscn::PackedScene::7789400362250605988::1772059057::0::1::::<><><>0<>0<><>::uid://44wvmi78jjlw::::res://game jam 1 art/sprite sheet game jam.png<>uid://bb6gquk5qkd2k::::res://towers/bunker.tscn<>uid://b4egef8qu6u3f::::res://enemy spawning script.gd<>uid://cuebxerci0hby::::res://visuals for tower UI and UI/whaether_controller.gd<>uid://cy5k1vf77gg8m::::res://visuals for tower UI and UI/range_ui.tscn<>uid://b2fcn3cu5nklc::::res://game jam 1 art/lightning strike .png<>uid://bsb0pa5ftckwh::::res://game jam 1 art/snow warning - Copy.png<>uid://8moti2i8p3xp::::res://visuals for tower UI and UI/main_ui.tscn
+test_level.tscn::PackedScene::7789400362250605988::1772066064::0::1::::<><><>0<>0<><>::uid://44wvmi78jjlw::::res://game jam 1 art/sprite sheet game jam.png<>uid://bb6gquk5qkd2k::::res://towers/bunker.tscn<>uid://b4egef8qu6u3f::::res://enemy spawning script.gd<>uid://cuebxerci0hby::::res://visuals for tower UI and UI/whaether_controller.gd<>uid://b2fcn3cu5nklc::::res://game jam 1 art/lightning strike .png<>uid://bsb0pa5ftckwh::::res://game jam 1 art/snow warning - Copy.png<>uid://8moti2i8p3xp::::res://visuals for tower UI and UI/main_ui.tscn
 ::res://enemies/::1771983874
-::res://game jam 1 art/::1772056136
-attack drill VFX.png::CompressedTexture2D::4159075067392072171::1772056136::1771961428::1::::<><><>0<>0<>ed805e2ce7228dcd497701af8704cbea<>res://.godot/imported/attack drill VFX.png-ab62b918986cd65d6eff365113695e8a.ctex::
-big aoe.png::CompressedTexture2D::3893324166236823162::1772056136::1772056136::1::::<><><>0<>0<>a2ed85f6fc677ed1123a3051da497837<>res://.godot/imported/big aoe.png-bcb91c64cdc70f9d57ede7c7cbc3b9c7.ctex::
-bullet.png::CompressedTexture2D::1958806092328167748::1772056136::1771900015::1::::<><><>0<>0<>ebcf803d67514a8497364567b2bee70d<>res://.godot/imported/bullet.png-242901d67bdc4ed180d32014660fa52b.ctex::
-bunker.png::CompressedTexture2D::6332722613474841473::1772056136::1771887648::1::::<><><>0<>0<>0f9ea87ebffbaa01256221c3c8f35975<>res://.godot/imported/bunker.png-8f8a38ae572cccb2afcb621d0af79072.ctex::
-Deer-Normal.png::CompressedTexture2D::8784109047876239976::1772056136::1771887647::1::::<><><>0<>0<>ba7417149713cc443ce6087c39316e9a<>res://.godot/imported/Deer-Normal.png-c20a34a17bcbbf9933bc721916c42e50.ctex::
-Drill Sheet.png::CompressedTexture2D::1573097224002889628::1772056136::1771961647::1::::<><><>0<>0<>d039bf7a1bc42d23c8db5985dc346804<>res://.godot/imported/Drill Sheet.png-44440d2ca8c633b179be0a5fce5c5087.ctex::
-fog warning.png::CompressedTexture2D::4749110432642232610::1772056136::1771949390::1::::<><><>0<>0<>16bf1e68f5e7caf58a068b8708b9f898<>res://.godot/imported/fog warning.png-920c3a3bbd332d2a9953698a0ac9eba6.ctex::
-Full-Deer-Sheet.png::CompressedTexture2D::2555808117276794759::1772056136::1771983881::1::::<><><>0<>0<>4d7f6f796f0eb310273a673034bd8607<>res://.godot/imported/Full-Deer-Sheet.png-8fa21d3c4466827f2195eb46e3ffc507.ctex::
-gun1-Sheet.png::CompressedTexture2D::5858978811932349937::1772056136::1772055291::1::::<><><>0<>0<>60539fe2e7f682804dab1aefd4078c97<>res://.godot/imported/gun1-Sheet.png-c607f7398832541dfd50fbd2dd6ff177.ctex::
-gun1.png::CompressedTexture2D::6908111020635902830::1772056136::1772054852::1::::<><><>0<>0<>c657a09baca360b9ad7e551980b0b922<>res://.godot/imported/gun1.png-879c3b0f2281c0e17fd78fd59e6739e8.ctex::
-gun-Sheet.png::CompressedTexture2D::341757012677533541::1772056136::1771900015::1::::<><><>0<>0<>57d9197675ff94d0318110dc204c6d41<>res://.godot/imported/gun-Sheet.png-e484c22df4d4d3727a0d67929938cfef.ctex::
-gun.png::CompressedTexture2D::2463237641248562715::1772056136::1771887647::1::::<><><>0<>0<>fcdba58f7debef7bc57fed09d41721aa<>res://.godot/imported/gun.png-eaa16de334110b9fa363e3e5b5bd8359.ctex::
-heat tower.png::CompressedTexture2D::398503826683357936::1772056136::1771949577::1::::<><><>0<>0<>d119b99aa618435a0c8b97b0f2727176<>res://.godot/imported/heat tower.png-4ec240b89fbf31ef2b1ef8b00e4a0790.ctex::
-Light Tower.png::CompressedTexture2D::903772646222178888::1772056136::1771887648::1::::<><><>0<>0<>526021493b3d0d9a0304a6aaf0679a64<>res://.godot/imported/Light Tower.png-2fdd625ef6e6e687ad1bf065f315f8d0.ctex::
-lightning rod.png::CompressedTexture2D::5046376956862688312::1772056136::1771963402::1::::<><><>0<>0<>7f8c48693b801837c6e45a0b2128c6e5<>res://.godot/imported/lightning rod.png-13d676500d2af4296428956871121e83.ctex::
-lightning strike .png::CompressedTexture2D::4291987474689305192::1772056136::1771954723::1::::<><><>0<>0<>c8152c66912409c4b643b4b3c37a9e5c<>res://.godot/imported/lightning strike .png-a6a32fb56c13dbd707b09bc154b520c5.ctex::
-muzzele shock.png::CompressedTexture2D::2730249247197261388::1772056136::1771950635::1::::<><><>0<>0<>e69a34e6810572493866420187681594<>res://.godot/imported/muzzele shock.png-6ecaa578a36e0ebff6c1fec0fa4e77e6.ctex::
-range.png::CompressedTexture2D::1659216620449721282::1772056136::1771887648::1::::<><><>0<>0<>a8b2b74b8cdb74dcf77a5f64f8ee7e11<>res://.godot/imported/range.png-7ca6742669353854af9d81d3e05cdb2b.ctex::
-snow warning - Copy.png::CompressedTexture2D::3653429005256269691::1772056136::1771963709::1::::<><><>0<>0<>4fa68424a30c3a175739d64c38deb651<>res://.godot/imported/snow warning - Copy.png-47da70c83febb7cc207d71ce12e06779.ctex::
-snow warning.png::CompressedTexture2D::6877830104717103838::1772056136::1771949390::1::::<><><>0<>0<>8f122ccdf165cf72c9b500b4c48ead86<>res://.godot/imported/snow warning.png-6bad2e02974e22620b36185c2ee592e8.ctex::
-sprite sheet game jam.png::CompressedTexture2D::2096717340020571912::1772056136::1771987435::1::::<><><>0<>0<>97f667efe4d86c3849eb6722ef3ecd9a<>res://.godot/imported/sprite sheet game jam.png-1725b6dc253eae9dc48321c125e4d7f6.ctex::
-Turret-Base.png::CompressedTexture2D::237133829999183633::1772056136::1771887648::1::::<><><>0<>0<>6598b7708906e73975e4913338080c5d<>res://.godot/imported/Turret-Base.png-128f48daf23c336884863ab3e5c0cdfc.ctex::
-visual effect icons.png::CompressedTexture2D::6079363404853227932::1772056136::1771887788::1::::<><><>0<>0<>fde8cc8224780deb293d36e7d75fe22a<>res://.godot/imported/visual effect icons.png-a3d5c9f6f04fe069a0ad1a8dc8ed899e.ctex::
-Wolf Fast.png::CompressedTexture2D::3642631851819049222::1772056136::1771887648::1::::<><><>0<>0<>3749ce4b8511b56677d979f9765336d3<>res://.godot/imported/Wolf Fast.png-e59b422d8a6e341df2d265e652adb0ec.ctex::
-Zeus-Sheet.png::CompressedTexture2D::4601799994556750827::1772056136::1771887648::1::::<><><>0<>0<>facc714d902a94f910e4191cf3c6d00c<>res://.godot/imported/Zeus-Sheet.png-6df48bdcdbc76a4c634ae2452f2e6e91.ctex::
-::res://towers/::1772063321
+::res://game jam 1 art/::1772066353
+attack drill VFX.png::CompressedTexture2D::4159075067392072171::1772066353::1771961428::1::::<><><>0<>0<>ed805e2ce7228dcd497701af8704cbea<>res://.godot/imported/attack drill VFX.png-ab62b918986cd65d6eff365113695e8a.ctex::
+big aoe.png::CompressedTexture2D::3893324166236823162::1772066353::1772056136::1::::<><><>0<>0<>a2ed85f6fc677ed1123a3051da497837<>res://.godot/imported/big aoe.png-bcb91c64cdc70f9d57ede7c7cbc3b9c7.ctex::
+bullet.png::CompressedTexture2D::1958806092328167748::1772066353::1771900015::1::::<><><>0<>0<>ebcf803d67514a8497364567b2bee70d<>res://.godot/imported/bullet.png-242901d67bdc4ed180d32014660fa52b.ctex::
+bunker.png::CompressedTexture2D::6332722613474841473::1772066353::1771887648::1::::<><><>0<>0<>0f9ea87ebffbaa01256221c3c8f35975<>res://.godot/imported/bunker.png-8f8a38ae572cccb2afcb621d0af79072.ctex::
+Deer-Normal.png::CompressedTexture2D::8784109047876239976::1772066353::1771887647::1::::<><><>0<>0<>ba7417149713cc443ce6087c39316e9a<>res://.godot/imported/Deer-Normal.png-c20a34a17bcbbf9933bc721916c42e50.ctex::
+Drill Sheet.png::CompressedTexture2D::1573097224002889628::1772066353::1771961647::1::::<><><>0<>0<>d039bf7a1bc42d23c8db5985dc346804<>res://.godot/imported/Drill Sheet.png-44440d2ca8c633b179be0a5fce5c5087.ctex::
+fog warning.png::CompressedTexture2D::4749110432642232610::1772066353::1771949390::1::::<><><>0<>0<>16bf1e68f5e7caf58a068b8708b9f898<>res://.godot/imported/fog warning.png-920c3a3bbd332d2a9953698a0ac9eba6.ctex::
+Full-Deer-Sheet.png::CompressedTexture2D::2555808117276794759::1772066353::1771983881::1::::<><><>0<>0<>4d7f6f796f0eb310273a673034bd8607<>res://.godot/imported/Full-Deer-Sheet.png-8fa21d3c4466827f2195eb46e3ffc507.ctex::
+gun1-Sheet.png::CompressedTexture2D::5858978811932349937::1772066353::1772055291::1::::<><><>0<>0<>60539fe2e7f682804dab1aefd4078c97<>res://.godot/imported/gun1-Sheet.png-c607f7398832541dfd50fbd2dd6ff177.ctex::
+gun1.png::CompressedTexture2D::6908111020635902830::1772066353::1772054852::1::::<><><>0<>0<>c657a09baca360b9ad7e551980b0b922<>res://.godot/imported/gun1.png-879c3b0f2281c0e17fd78fd59e6739e8.ctex::
+gun-Sheet.png::CompressedTexture2D::341757012677533541::1772066353::1771900015::1::::<><><>0<>0<>57d9197675ff94d0318110dc204c6d41<>res://.godot/imported/gun-Sheet.png-e484c22df4d4d3727a0d67929938cfef.ctex::
+gun.png::CompressedTexture2D::2463237641248562715::1772066353::1771887647::1::::<><><>0<>0<>fcdba58f7debef7bc57fed09d41721aa<>res://.godot/imported/gun.png-eaa16de334110b9fa363e3e5b5bd8359.ctex::
+heat tower.png::CompressedTexture2D::398503826683357936::1772066353::1771949577::1::::<><><>0<>0<>d119b99aa618435a0c8b97b0f2727176<>res://.godot/imported/heat tower.png-4ec240b89fbf31ef2b1ef8b00e4a0790.ctex::
+Light Tower.png::CompressedTexture2D::903772646222178888::1772066353::1771887648::1::::<><><>0<>0<>526021493b3d0d9a0304a6aaf0679a64<>res://.godot/imported/Light Tower.png-2fdd625ef6e6e687ad1bf065f315f8d0.ctex::
+lightning rod.png::CompressedTexture2D::5046376956862688312::1772066353::1771963402::1::::<><><>0<>0<>7f8c48693b801837c6e45a0b2128c6e5<>res://.godot/imported/lightning rod.png-13d676500d2af4296428956871121e83.ctex::
+lightning strike .png::CompressedTexture2D::4291987474689305192::1772066353::1771954723::1::::<><><>0<>0<>c8152c66912409c4b643b4b3c37a9e5c<>res://.godot/imported/lightning strike .png-a6a32fb56c13dbd707b09bc154b520c5.ctex::
+muzzele shock.png::CompressedTexture2D::2730249247197261388::1772066353::1771950635::1::::<><><>0<>0<>e69a34e6810572493866420187681594<>res://.godot/imported/muzzele shock.png-6ecaa578a36e0ebff6c1fec0fa4e77e6.ctex::
+range.png::CompressedTexture2D::1659216620449721282::1772066353::1771887648::1::::<><><>0<>0<>a8b2b74b8cdb74dcf77a5f64f8ee7e11<>res://.godot/imported/range.png-7ca6742669353854af9d81d3e05cdb2b.ctex::
+scrap.png::CompressedTexture2D::2590747713003813373::1772066353::1772066354::1::::<><><>0<>0<>90746c57a70bcc038e1320ffba42d5aa<>res://.godot/imported/scrap.png-fdc6ce847969d04c8584a4720b740854.ctex::
+snow warning - Copy.png::CompressedTexture2D::3653429005256269691::1772066353::1771963709::1::::<><><>0<>0<>4fa68424a30c3a175739d64c38deb651<>res://.godot/imported/snow warning - Copy.png-47da70c83febb7cc207d71ce12e06779.ctex::
+snow warning.png::CompressedTexture2D::6877830104717103838::1772066353::1771949390::1::::<><><>0<>0<>8f122ccdf165cf72c9b500b4c48ead86<>res://.godot/imported/snow warning.png-6bad2e02974e22620b36185c2ee592e8.ctex::
+sprite sheet game jam.png::CompressedTexture2D::2096717340020571912::1772066353::1771987435::1::::<><><>0<>0<>97f667efe4d86c3849eb6722ef3ecd9a<>res://.godot/imported/sprite sheet game jam.png-1725b6dc253eae9dc48321c125e4d7f6.ctex::
+Turret-Base.png::CompressedTexture2D::237133829999183633::1772066353::1771887648::1::::<><><>0<>0<>6598b7708906e73975e4913338080c5d<>res://.godot/imported/Turret-Base.png-128f48daf23c336884863ab3e5c0cdfc.ctex::
+visual effect icons.png::CompressedTexture2D::6079363404853227932::1772066353::1771887788::1::::<><><>0<>0<>fde8cc8224780deb293d36e7d75fe22a<>res://.godot/imported/visual effect icons.png-a3d5c9f6f04fe069a0ad1a8dc8ed899e.ctex::
+Wolf Fast.png::CompressedTexture2D::3642631851819049222::1772066353::1771887648::1::::<><><>0<>0<>3749ce4b8511b56677d979f9765336d3<>res://.godot/imported/Wolf Fast.png-e59b422d8a6e341df2d265e652adb0ec.ctex::
+Zeus-Sheet.png::CompressedTexture2D::4601799994556750827::1772066353::1771887648::1::::<><><>0<>0<>facc714d902a94f910e4191cf3c6d00c<>res://.godot/imported/Zeus-Sheet.png-6df48bdcdbc76a4c634ae2452f2e6e91.ctex::
+::res://towers/::1772064313
 AOE tower.tscn::PackedScene::3378088815542040331::1772056992::0::1::::<><><>0<>0<><>::uid://c702wigehqpsm::::res://towers/aoe_tower.gd<>uid://b0ixmgw2b8g72::::res://game jam 1 art/attack drill VFX.png<>uid://woaxf0uc7x77::::res://game jam 1 art/Drill Sheet.png<>uid://b752caw6yueob::::res://range checker.gd<>uid://xv0b47p0u33k::::res://game jam 1 art/range.png<>uid://csu5hyq3itnvg::::res://game jam 1 art/visual effect icons.png
 aoe_tower2.tscn::PackedScene::7777852270089814328::1772057816::0::1::::<><><>0<>0<><>::uid://dxrtvr5vto6nu::::res://towers/aoe_tower_2.gd<>uid://b0ixmgw2b8g72::::res://game jam 1 art/attack drill VFX.png<>uid://bvp7qldvnjewg::::res://game jam 1 art/big aoe.png<>uid://b752caw6yueob::::res://range checker.gd<>uid://xv0b47p0u33k::::res://game jam 1 art/range.png<>uid://csu5hyq3itnvg::::res://game jam 1 art/visual effect icons.png
-aoe_tower.gd::GDScript::7072172883572705564::1772057590::0::1::::<>StaticBody2D<><>0<>0<><>::
-aoe_tower_2.gd::GDScript::8809891941328835594::1772057590::0::1::::<>StaticBody2D<><>0<>0<><>::
+aoe_tower.gd::GDScript::7072172883572705564::1772064180::0::1::::<>StaticBody2D<><>0<>0<><>::
+aoe_tower_2.gd::GDScript::8809891941328835594::1772064180::0::1::::<>StaticBody2D<><>0<>0<><>::
 bullet.gd::GDScript::5488603744407076794::1772028610::0::1::::<>CharacterBody2D<><>0<>0<><>::
 bullet.tscn::PackedScene::2936376436233714737::1771983780::0::1::::<><><>0<>0<><>::uid://ckgyrcb1pn21c::::res://bullet.gd
 bullet_tower2.tscn::PackedScene::4555577073945396033::1772055207::0::1::::<><><>0<>0<><>::uid://bbdhftwr05r28::::res://game jam 1 art/gun.png<>uid://dx73cb87pbst7::::res://towers/bullet_tower_2.gd<>uid://dm4ta267yv4d::::res://game jam 1 art/Turret-Base.png<>uid://e4sxnn2lpfw4::::res://game jam 1 art/gun-Sheet.png<>uid://be5s2n8fl1k7e::::res://game jam 1 art/muzzele shock.png<>uid://b752caw6yueob::::res://range checker.gd<>uid://xv0b47p0u33k::::res://game jam 1 art/range.png<>uid://csu5hyq3itnvg::::res://game jam 1 art/visual effect icons.png
@@ -48,13 +49,13 @@ bunker.gd::GDScript::4450701859814328436::1771887626::0::1::::<>Area2D<><>0<>0<>
 bunker.tscn::PackedScene::2520999179665952188::1772028516::0::1::::<><><>0<>0<><>::uid://b4n7n6idfx8w3::::res://towers/bunker.gd<>uid://cwhvas0tqi1yj::::res://game jam 1 art/bunker.png
 character_body_2d.gd::GDScript::6205562592276473364::1772028610::0::1::::<>CharacterBody2D<><>0<>0<><>::
 heat area test code.gd::GDScript::3539525936100718309::1772059485::0::1::::<>Area2D<><>0<>0<><>::
-heat_tower.gd::GDScript::3353318004981317193::1772062715::0::1::::<>StaticBody2D<><>0<>0<><>::
+heat_tower.gd::GDScript::3353318004981317193::1772063753::0::1::::<>StaticBody2D<><>0<>0<><>::
 heat_tower.tscn::PackedScene::3030880653932697175::1772062410::0::1::::<><><>0<>0<><>::uid://bn1mwmg7evc0h::::res://towers/heat_tower.gd<>uid://fxbkgtp80g4g::::res://game jam 1 art/heat tower.png<>uid://b752caw6yueob::::res://range checker.gd<>uid://xv0b47p0u33k::::res://game jam 1 art/range.png
 lightning rod.tscn::PackedScene::5967380084250650229::1772058064::0::1::::<><><>0<>0<><>::uid://cd5rddokwt8lg::::res://game jam 1 art/lightning rod.png<>uid://hx780lrimlyf::::res://towers/lightning_rod.gd
 lightning_rod.gd::GDScript::540805799637170209::1772057872::0::1::::<>Sprite2D<><>0<>0<><>::
-light_tower.gd::GDScript::4688078287065511574::1772063294::0::1::::<>StaticBody2D<><>0<>0<><>::
+light_tower.gd::GDScript::4688078287065511574::1772064313::0::1::::<>StaticBody2D<><>0<>0<><>::
 light_tower.tscn::PackedScene::3974503564376758956::1772063321::0::1::::<><><>0<>0<><>::uid://b752caw6yueob::::res://range checker.gd<>uid://b71671512l28a::::res://towers/light_tower.gd<>uid://m42ad8ht81tc::::res://game jam 1 art/Light Tower.png<>uid://xv0b47p0u33k::::res://game jam 1 art/range.png
-::res://visuals for tower UI and UI/::1772063430
+::res://visuals for tower UI and UI/::1772066294
 aoe_tower_2_panal.tscn::PackedScene::8086551685284822137::1772057049::0::1::::<><><>0<>0<><>::uid://bvp7qldvnjewg::::res://game jam 1 art/big aoe.png
 aoe_tower_panal.tscn::PackedScene::2952569949035038059::1772056557::0::1::::<><><>0<>0<><>::uid://woaxf0uc7x77::::res://game jam 1 art/Drill Sheet.png
 bullet_tower_2_panal.tscn::PackedScene::5631432690530555258::1772054499::0::1::::<><><>0<>0<><>::uid://dm4ta267yv4d::::res://game jam 1 art/Turret-Base.png<>uid://bbdhftwr05r28::::res://game jam 1 art/gun.png
@@ -62,11 +63,12 @@ bullet_tower_panal.tscn::PackedScene::3230167297900391749::1772054966::0::1::::<
 global signals.gd::GDScript::7887070486878578565::1772028015::0::1::::<>Node<><>0<>0<><>::
 heat_tower_panel.tscn::PackedScene::7926024214647728907::1772058769::0::1::::<><><>0<>0<><>::uid://fxbkgtp80g4g::::res://game jam 1 art/heat tower.png
 lightning panel.tscn::PackedScene::5000303306060041242::1772058331::0::1::::<><><>0<>0<><>::uid://cd5rddokwt8lg::::res://game jam 1 art/lightning rod.png
-main_ui.tscn::PackedScene::2341888803391435093::1772058768::0::1::::<><><>0<>0<><>::uid://dmda48dmr2udt::::res://visuals for tower UI and UI/placing_panel.gd<>uid://bmaynbjvrhooj::::res://visuals for tower UI and UI/bullet_tower_panal.tscn<>uid://bicinpn8046l8::::res://visuals for tower UI and UI/aoe_tower_panal.tscn<>uid://cmh54x67rraqc::::res://visuals for tower UI and UI/bullet_tower_2_panal.tscn<>uid://dnhglbp2pxemj::::res://visuals for tower UI and UI/aoe_tower_2_panal.tscn<>uid://cdigjahr4sw87::::res://visuals for tower UI and UI/lightning panel.tscn<>uid://dk6opwxve63d4::::res://visuals for tower UI and UI/heat_tower_panel.tscn
-placing_panel.gd::GDScript::8007774834495108337::1772058694::0::1::::<>Panel<><>0<>0<><>::
-range button.gd::GDScript::5335910390457065384::1772028030::0::1::::<>Button<><>0<>0<><>::
-range_ui.tscn::PackedScene::6519959660101279862::1772026750::0::1::::<><><>0<>0<><>::uid://cia0wuhi3aaiy::::res://visuals for tower UI and UI/range button.gd
 light_panel.tscn::PackedScene::6573496889242532291::1772063419::0::1::::<><><>0<>0<><>::uid://m42ad8ht81tc::::res://game jam 1 art/Light Tower.png
+main_ui.tscn::PackedScene::2341888803391435093::1772066294::0::1::::<><><>0<>0<><>::uid://dmda48dmr2udt::::res://visuals for tower UI and UI/placing_panel.gd<>uid://bmaynbjvrhooj::::res://visuals for tower UI and UI/bullet_tower_panal.tscn<>uid://bicinpn8046l8::::res://visuals for tower UI and UI/aoe_tower_panal.tscn<>uid://cmh54x67rraqc::::res://visuals for tower UI and UI/bullet_tower_2_panal.tscn<>uid://dnhglbp2pxemj::::res://visuals for tower UI and UI/aoe_tower_2_panal.tscn<>uid://cdigjahr4sw87::::res://visuals for tower UI and UI/lightning panel.tscn<>uid://dk6opwxve63d4::::res://visuals for tower UI and UI/heat_tower_panel.tscn<>uid://c0wisetocipx0::::res://visuals for tower UI and UI/light_panel.tscn<>uid://cia0wuhi3aaiy::::res://visuals for tower UI and UI/range button.gd<>uid://dptm6x0lss8t5::::res://visuals for tower UI and UI/currency_label.gd
+placing_panel.gd::GDScript::8007774834495108337::1772063610::0::1::::<>Panel<><>0<>0<><>::
+range button.gd::GDScript::5335910390457065384::1772028030::0::1::::<>Button<><>0<>0<><>::
+range_ui.tscn::PackedScene::5005885259818032207::1772065568::0::1::::<><><>0<>0<><>::uid://cia0wuhi3aaiy::::res://visuals for tower UI and UI/range button.gd
+currency_label.gd::GDScript::8252103093682927736::1772066120::0::1::::<>Label<><>0<>0<><>::
 visual_aoe_2_scene.tscn::PackedScene::3336062551403109764::1772057047::0::1::::<><><>0<>0<><>::uid://xv0b47p0u33k::::res://game jam 1 art/range.png<>uid://bvp7qldvnjewg::::res://game jam 1 art/big aoe.png
 visual_aoe_tower_scene.tscn::PackedScene::6249529050177634715::1772028326::0::1::::<><><>0<>0<><>::uid://xv0b47p0u33k::::res://game jam 1 art/range.png
 visual_bullet_tower_2_scene.tscn::PackedScene::1392949017704658292::1772054993::0::1::::<><><>0<>0<><>::uid://bbdhftwr05r28::::res://game jam 1 art/gun.png<>uid://dm4ta267yv4d::::res://game jam 1 art/Turret-Base.png<>uid://e4sxnn2lpfw4::::res://game jam 1 art/gun-Sheet.png<>uid://xv0b47p0u33k::::res://game jam 1 art/range.png

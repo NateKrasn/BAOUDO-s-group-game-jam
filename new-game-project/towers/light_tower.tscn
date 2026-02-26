@@ -4,15 +4,16 @@
 [ext_resource type="Script" uid="uid://b71671512l28a" path="res://towers/light_tower.gd" id="1_f5vws"]
 [ext_resource type="Texture2D" uid="uid://m42ad8ht81tc" path="res://game jam 1 art/Light Tower.png" id="1_lkc4m"]
 [ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="2_f5vws"]
+[ext_resource type="Script" uid="uid://dfqwun7kvsgfx" path="res://towers/place_holder.gd" id="5_u6rj7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rtxe3"]
 radius = 41.19466
 
-[sub_resource type="Gradient" id="Gradient_kbmch"]
+[sub_resource type="Gradient" id="Gradient_aqe2l"]
 colors = PackedColorArray(0.92999387, 0.8359128, 0, 1, 1, 1, 1, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_f5vws"]
-gradient = SubResource("Gradient_kbmch")
+gradient = SubResource("Gradient_aqe2l")
 fill = 1
 fill_from = Vector2(0.4869565, 0.49130434)
 fill_to = Vector2(0.726087, 0.24347825)
@@ -40,5 +41,18 @@ position = Vector2(2.1457672e-06, 0.1578927)
 scale = Vector2(1.3125001, 1.3075658)
 texture = ExtResource("2_f5vws")
 
+[node name="place holder" type="Sprite2D" parent="." unique_id=1459858685]
+position = Vector2(-12, -11)
+script = ExtResource("5_u6rj7")
+
+[node name="Button" type="Button" parent="place holder" unique_id=228148649]
+self_modulate = Color(0.99999994, 0.11322755, 0.16187015, 1)
+offset_top = -1.0
+offset_right = 23.636364
+offset_bottom = 19.0
+theme_override_font_sizes/font_size = 8
+text = "45$"
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="pressed" from="place holder/Button" to="." method="_on_button_pressed"]

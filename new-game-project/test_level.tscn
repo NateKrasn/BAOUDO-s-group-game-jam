@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://bb6gquk5qkd2k" path="res://towers/bunker.tscn" id="2_4ptq8"]
 [ext_resource type="Script" uid="uid://b4egef8qu6u3f" path="res://enemy spawning script.gd" id="2_f7g2b"]
 [ext_resource type="Script" uid="uid://cuebxerci0hby" path="res://visuals for tower UI and UI/whaether_controller.gd" id="4_4ptq8"]
-[ext_resource type="PackedScene" uid="uid://cy5k1vf77gg8m" path="res://visuals for tower UI and UI/range_ui.tscn" id="6_gbhdq"]
 [ext_resource type="Texture2D" uid="uid://b2fcn3cu5nklc" path="res://game jam 1 art/lightning strike .png" id="8_6emce"]
 [ext_resource type="Texture2D" uid="uid://bsb0pa5ftckwh" path="res://game jam 1 art/snow warning - Copy.png" id="9_a25ih"]
 [ext_resource type="PackedScene" uid="uid://8moti2i8p3xp" path="res://visuals for tower UI and UI/main_ui.tscn" id="13_38et7"]
@@ -143,17 +142,8 @@ position = Vector2(4, -36)
 scale = Vector2(1, 12.640626)
 texture = SubResource("GradientTexture2D_lowby")
 
-[node name="range UI" parent="." unique_id=1355217930 instance=ExtResource("6_gbhdq")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 3.0
-offset_top = 282.0
-offset_right = 3.0
-offset_bottom = 282.0
-grow_horizontal = 1
-grow_vertical = 1
-metadata/_edit_use_anchors_ = true
-
 [node name="main UI" parent="." unique_id=2087428840 instance=ExtResource("13_38et7")]
+anchors_preset = 9
+anchor_right = 0.0
+grow_horizontal = 1
 scale = Vector2(0.5, 0.5)

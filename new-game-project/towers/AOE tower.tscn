@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://b752caw6yueob" path="res://range checker.gd" id="4_3s7gn"]
 [ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="5_ncv67"]
 [ext_resource type="Texture2D" uid="uid://csu5hyq3itnvg" path="res://game jam 1 art/visual effect icons.png" id="6_gkyhl"]
+[ext_resource type="Script" uid="uid://dfqwun7kvsgfx" path="res://towers/place_holder.gd" id="7_3yk1a"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_43hxt"]
 radius = 48.0
@@ -114,7 +115,7 @@ texture = ExtResource("2_3yk1a")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=873115296]
 sprite_frames = SubResource("SpriteFrames_ncv67")
 animation = &"idle"
-frame_progress = 0.04814648
+frame_progress = 0.33027416
 
 [node name="frozen x-vfx" type="AnimatedSprite2D" parent="." unique_id=106686772]
 visible = false
@@ -151,7 +152,20 @@ animation = &"both"
 wait_time = 2.0
 autostart = true
 
+[node name="place holder" type="Sprite2D" parent="." unique_id=569074219]
+visible = false
+position = Vector2(-12, -11)
+script = ExtResource("7_3yk1a")
+
+[node name="Button" type="Button" parent="place holder" unique_id=2004560043]
+self_modulate = Color(0.99999994, 0.11322755, 0.16187015, 1)
+offset_right = 23.636364
+offset_bottom = 20.0
+theme_override_font_sizes/font_size = 8
+text = "25$"
+
 [connection signal="body_shape_entered" from="attack area" to="." method="_on_attack_area_body_shape_entered"]
 [connection signal="body_shape_entered" from="detection area" to="." method="_on_detection_area_body_shape_entered"]
 [connection signal="body_shape_exited" from="detection area" to="." method="_on_detection_area_body_shape_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="place holder/Button" to="." method="_on_button_pressed"]

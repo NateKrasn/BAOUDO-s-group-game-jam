@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cpqer36t24s06" path="res://game jam 1 art/gun1-Sheet.png" id="4_omxrm"]
 [ext_resource type="Texture2D" uid="uid://csu5hyq3itnvg" path="res://game jam 1 art/visual effect icons.png" id="6_suoaq"]
 [ext_resource type="Texture2D" uid="uid://be5s2n8fl1k7e" path="res://game jam 1 art/muzzele shock.png" id="8_uraqg"]
+[ext_resource type="Script" uid="uid://dfqwun7kvsgfx" path="res://towers/place_holder.gd" id="9_n6fps"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n6fps"]
 atlas = ExtResource("2_omxrm")
@@ -120,7 +121,6 @@ script = ExtResource("2_03766")
 
 [node name="Sprite2D" type="Sprite2D" parent="tower/CollisionShape2D" unique_id=1265470456]
 modulate = Color(1, 1, 1, 0.7058824)
-position = Vector2(-1.9073486e-06, 1.5497208e-06)
 scale = Vector2(1.78125, 1.8125)
 texture = ExtResource("2_7v4cw")
 
@@ -136,6 +136,19 @@ sprite_frames = SubResource("SpriteFrames_n8uu4")
 animation = &"both"
 autoplay = "both"
 
+[node name="place holder" type="Sprite2D" parent="." unique_id=757719397]
+visible = false
+position = Vector2(-12, -11)
+script = ExtResource("9_n6fps")
+
+[node name="Button" type="Button" parent="place holder" unique_id=1145939117]
+self_modulate = Color(0.99999994, 0.11322755, 0.16187015, 1)
+offset_right = 23.636364
+offset_bottom = 20.0
+theme_override_font_sizes/font_size = 8
+text = "20$"
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_shape_entered" from="tower" to="." method="_on_tower_body_shape_entered"]
 [connection signal="body_shape_exited" from="tower" to="." method="_on_tower_body_shape_exited"]
+[connection signal="pressed" from="place holder/Button" to="." method="_on_button_pressed"]

@@ -29,3 +29,10 @@ res://towers/heat area test code.gd
 res://towers/bullet_tower.gd
 res://towers/light_tower.gd
 res://towers/bullet_tower_2.gd
+res://visuals for tower UI and UI/currency_label.gd
+res://visuals for tower UI and UI/buy_button.gd
+res://visuals for tower UI and UI/main_ui.gd
+res://visuals for tower UI and UI/global signals.gd
+res://test_enemy.gd
+res://towers/place_holder.gd
+res://visuals for tower UI and UI/sell_button.gd
