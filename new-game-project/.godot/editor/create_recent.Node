@@ -1,7 +1,7 @@
-Sprite2D
-Button
 Label
 Panel
+Sprite2D
+Button
 DirectionalLight2D
 Timer
 AnimatedSprite2D

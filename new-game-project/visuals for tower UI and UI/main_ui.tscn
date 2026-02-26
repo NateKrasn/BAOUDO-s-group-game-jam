@@ -43,23 +43,128 @@ theme_override_constants/v_separation = 10
 [node name="bullet tower" parent="placing panel/FlowContainer" unique_id=589607979 instance=ExtResource("2_ktt6o")]
 layout_mode = 2
 
+[node name="description" type="Panel" parent="placing panel/FlowContainer" unique_id=589670559]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="placing panel/FlowContainer/description" unique_id=1696366259]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 71.0
+offset_bottom = 72.88
+theme_override_font_sizes/font_size = 12
+text = "$25
+DPS : 1.35
+Range : 100"
+
 [node name="AOE tower panal" parent="placing panel/FlowContainer" unique_id=1895748486 instance=ExtResource("3_k4u2p")]
 layout_mode = 2
+
+[node name="description2" type="Panel" parent="placing panel/FlowContainer" unique_id=772982721]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="placing panel/FlowContainer/description2" unique_id=203096091]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 71.0
+offset_bottom = 72.88
+theme_override_font_sizes/font_size = 12
+text = "$30
+DPS : 1
+Range : 65"
 
 [node name="bullet tower2 panal" parent="placing panel/FlowContainer" unique_id=267940594 instance=ExtResource("4_b6drp")]
 layout_mode = 2
 
+[node name="description3" type="Panel" parent="placing panel/FlowContainer" unique_id=725554482]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="placing panel/FlowContainer/description3" unique_id=1135787604]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 71.0
+offset_bottom = 72.88
+theme_override_font_sizes/font_size = 12
+text = "$75
+DPS : 2.5
+Range : 140"
+
 [node name="AOE tower2 panal" parent="placing panel/FlowContainer" unique_id=931870247 instance=ExtResource("5_q0xr7")]
 layout_mode = 2
+
+[node name="description4" type="Panel" parent="placing panel/FlowContainer" unique_id=1412977898]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="placing panel/FlowContainer/description4" unique_id=733185035]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 71.0
+offset_bottom = 72.88
+theme_override_font_sizes/font_size = 12
+text = "$90
+DPS : 1.5
+Range : 120"
 
 [node name="bullet tower2 panal2" parent="placing panel/FlowContainer" unique_id=1982086283 instance=ExtResource("6_d66s8")]
 layout_mode = 2
 
+[node name="description5" type="Panel" parent="placing panel/FlowContainer" unique_id=688795398]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="placing panel/FlowContainer/description5" unique_id=325683351]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 78.0
+offset_bottom = 72.88
+theme_override_font_sizes/font_size = 12
+text = "$45
+strat : Storm
+"
+
 [node name="heat tower panel" parent="placing panel/FlowContainer" unique_id=519851284 instance=ExtResource("7_tb4cu")]
 layout_mode = 2
 
+[node name="description6" type="Panel" parent="placing panel/FlowContainer" unique_id=2106539300]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="placing panel/FlowContainer/description6" unique_id=2036598075]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 71.0
+offset_bottom = 72.88
+theme_override_font_sizes/font_size = 12
+text = "$45
+strat : Snow
+Range : 60"
+
 [node name="light panel" parent="placing panel/FlowContainer" unique_id=1632384826 instance=ExtResource("8_tjmn6")]
 layout_mode = 2
+
+[node name="description7" type="Panel" parent="placing panel/FlowContainer" unique_id=1135731513]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="placing panel/FlowContainer/description7" unique_id=580028088]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 71.0
+offset_bottom = 72.88
+theme_override_font_sizes/font_size = 12
+text = "$45
+strat : Fog
+Range : 60"
 
 [node name="range button" type="Button" parent="." unique_id=197051444]
 custom_minimum_size = Vector2(20, 20)

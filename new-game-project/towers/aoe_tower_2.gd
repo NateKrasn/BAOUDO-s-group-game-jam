@@ -7,7 +7,7 @@ func _ready() -> void:
 	$"attack area/CollisionShape2D".disabled = true
 	$"attack area/CollisionShape2D/attack VFX".visible = false
 	add_to_group("tower")
-	get_parent().move_child(self, 2)
+	get_parent().move_child(self, 3)
 
 func _on_detection_area_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
 	pass
