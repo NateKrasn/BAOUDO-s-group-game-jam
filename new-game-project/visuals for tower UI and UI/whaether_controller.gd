@@ -11,7 +11,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if ready1:
-		probability = randi_range(1, 200)
+		probability = randi_range(1, 100)
 		if probability < 46:
 			$"fog warning".visible = true
 			await get_tree().create_timer(4).timeout
@@ -32,7 +32,7 @@ func _process(delta: float) -> void:
 			await get_tree().create_timer(5).timeout
 			GlobalSignals.snow_on = false
 			$snow.visible = false
-		elif probability < 201:
+		elif probability < 101:
 			$"lightning warning".visible = true
 			await get_tree().create_timer(4.0).timeout
 			$"lightning warning".visible = false
@@ -45,7 +45,7 @@ func _process(delta: float) -> void:
 
 func wheather_start_timer():
 	while true:
-		await get_tree().create_timer(15).timeout
+		await get_tree().create_timer(10).timeout
 		ready1 = true
 		await get_tree().create_timer(0.001).timeout
 		ready1 = false
@@ -78,5 +78,4 @@ func strike_tower() -> void:
 		$"lightning VFX".visible = true
 		await get_tree().create_timer(0.5).timeout
 		$"lightning VFX".visible = false
-		if is_instance_valid(target):
-			target.queue_free()
+		target.queue_free()

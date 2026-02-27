@@ -1,13 +1,9 @@
 extends PathFollow2D
+class_name test_enemy
 signal minus_health
 
 var speed = 20
 @onready var anim = $AnimatedSprite2D 
-
-
-func _ready() -> void:
-	get_parent().move_child(self, 2)
-
 
 func _physics_process(delta: float) -> void:
 	var prev_pos = position

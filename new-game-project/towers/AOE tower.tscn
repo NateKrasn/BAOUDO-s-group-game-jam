@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="5_ncv67"]
 [ext_resource type="Texture2D" uid="uid://csu5hyq3itnvg" path="res://game jam 1 art/visual effect icons.png" id="6_gkyhl"]
 [ext_resource type="Script" uid="uid://dfqwun7kvsgfx" path="res://towers/place_holder.gd" id="7_3yk1a"]
-[ext_resource type="FontFile" uid="uid://dde6ilyio5ob" path="res://game jam 1 art/upheavtt.ttf" id="8_vf0yv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_43hxt"]
 radius = 48.0
@@ -162,8 +161,7 @@ script = ExtResource("7_3yk1a")
 self_modulate = Color(0.99999994, 0.11322755, 0.16187015, 1)
 offset_right = 23.636364
 offset_bottom = 20.0
-theme_override_fonts/font = ExtResource("8_vf0yv")
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 8
 text = "25$"
 
 [connection signal="body_shape_entered" from="attack area" to="." method="_on_attack_area_body_shape_entered"]

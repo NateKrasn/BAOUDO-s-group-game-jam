@@ -18,6 +18,3 @@ func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_inde
 	if body.has_method("_take_damage"):
 		body._take_damage(1)
 		self.queue_free()
-	if body.has_method("_take_bullet_damage"):
-		body._take_bullet_damage(1)
-		self.queue_free()
