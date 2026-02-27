@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://test_enemy.gd" id="1_w6lxr"]
 [ext_resource type="Texture2D" uid="uid://bcob1y7cxtafv" path="res://game jam 1 art/Full-Deer-Sheet.png" id="2_w6lxr"]
-[ext_resource type="Script" uid="uid://cuoayd5nkv7bk" path="res://towers/hitbox deer.gd" id="3_fv1qn"]
+[ext_resource type="Script" uid="uid://cuoayd5nkv7bk" path="res://towers/character_body_2d.gd" id="3_fv1qn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fv1qn"]
 atlas = ExtResource("2_w6lxr")
