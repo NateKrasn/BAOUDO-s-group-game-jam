@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://xv0b47p0u33k" path="res://game jam 1 art/range.png" id="6_m6oco"]
 [ext_resource type="Texture2D" uid="uid://csu5hyq3itnvg" path="res://game jam 1 art/visual effect icons.png" id="7_587l7"]
 [ext_resource type="Script" uid="uid://dfqwun7kvsgfx" path="res://towers/place_holder.gd" id="9_3vime"]
+[ext_resource type="FontFile" uid="uid://dde6ilyio5ob" path="res://game jam 1 art/upheavtt.ttf" id="10_rw3v3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_suoaq"]
 atlas = ExtResource("1_5mie6")
@@ -146,7 +147,8 @@ offset_left = -2.0
 offset_top = 3.0
 offset_right = 21.636364
 offset_bottom = 23.0
-theme_override_font_sizes/font_size = 8
+theme_override_fonts/font = ExtResource("10_rw3v3")
+theme_override_font_sizes/font_size = 10
 text = "70$"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

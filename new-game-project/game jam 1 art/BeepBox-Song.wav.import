@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bh8wead6m1c2l"
+path="res://.godot/imported/BeepBox-Song.wav-b9075321f027cd4c2416a968b96e2d76.sample"
+
+[deps]
+
+source_file="res://game jam 1 art/BeepBox-Song.wav"
+dest_files=["res://.godot/imported/BeepBox-Song.wav-b9075321f027cd4c2416a968b96e2d76.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
