@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bmaynbjvrhooj" path="res://visuals for tower UI and UI/bullet_tower_panal.tscn" id="2_ktt6o"]
 [ext_resource type="PackedScene" uid="uid://bicinpn8046l8" path="res://visuals for tower UI and UI/aoe_tower_panal.tscn" id="3_k4u2p"]
 [ext_resource type="PackedScene" uid="uid://cmh54x67rraqc" path="res://visuals for tower UI and UI/bullet_tower_2_panal.tscn" id="4_b6drp"]
+[ext_resource type="FontFile" uid="uid://dde6ilyio5ob" path="res://game jam 1 art/upheavtt.ttf" id="4_swdvl"]
 [ext_resource type="PackedScene" uid="uid://dnhglbp2pxemj" path="res://visuals for tower UI and UI/aoe_tower_2_panal.tscn" id="5_q0xr7"]
 [ext_resource type="PackedScene" uid="uid://cdigjahr4sw87" path="res://visuals for tower UI and UI/lightning panel.tscn" id="6_d66s8"]
 [ext_resource type="PackedScene" uid="uid://dk6opwxve63d4" path="res://visuals for tower UI and UI/heat_tower_panel.tscn" id="7_tb4cu"]
@@ -13,6 +14,38 @@
 [ext_resource type="Script" uid="uid://dptm6x0lss8t5" path="res://visuals for tower UI and UI/currency_label.gd" id="10_we0ls"]
 [ext_resource type="Texture2D" uid="uid://bc58ibglgit6t" path="res://game jam 1 art/scrap.png" id="11_uesp2"]
 [ext_resource type="Script" uid="uid://bm2k081jconlf" path="res://visuals for tower UI and UI/sell_button.gd" id="13_820km"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mhnbh"]
+font = ExtResource("4_swdvl")
+font_size = 13
+
+[sub_resource type="LabelSettings" id="LabelSettings_wqhk5"]
+font = ExtResource("4_swdvl")
+font_size = 13
+
+[sub_resource type="LabelSettings" id="LabelSettings_swdvl"]
+font = ExtResource("4_swdvl")
+font_size = 13
+
+[sub_resource type="LabelSettings" id="LabelSettings_14c2m"]
+font = ExtResource("4_swdvl")
+font_size = 13
+
+[sub_resource type="LabelSettings" id="LabelSettings_tqu6k"]
+font = ExtResource("4_swdvl")
+font_size = 13
+
+[sub_resource type="LabelSettings" id="LabelSettings_0cg7c"]
+font = ExtResource("4_swdvl")
+font_size = 13
+
+[sub_resource type="LabelSettings" id="LabelSettings_3emd8"]
+font = ExtResource("4_swdvl")
+font_size = 13
+
+[sub_resource type="LabelSettings" id="LabelSettings_u3nuv"]
+font = ExtResource("4_swdvl")
+font_size = 44
 
 [node name="Control" type="Control" unique_id=905765377]
 layout_mode = 3
@@ -51,12 +84,13 @@ layout_mode = 2
 layout_mode = 0
 offset_left = 5.0
 offset_top = 6.0
-offset_right = 71.0
+offset_right = 91.0
 offset_bottom = 72.88
 theme_override_font_sizes/font_size = 12
 text = "$25
 DPS : 1.35
 Range : 100"
+label_settings = SubResource("LabelSettings_mhnbh")
 
 [node name="AOE tower panal" parent="placing panel/FlowContainer" unique_id=1895748486 instance=ExtResource("3_k4u2p")]
 layout_mode = 2
@@ -75,6 +109,7 @@ theme_override_font_sizes/font_size = 12
 text = "$30
 DPS : 1
 Range : 65"
+label_settings = SubResource("LabelSettings_wqhk5")
 
 [node name="bullet tower2 panal" parent="placing panel/FlowContainer" unique_id=267940594 instance=ExtResource("4_b6drp")]
 layout_mode = 2
@@ -93,6 +128,7 @@ theme_override_font_sizes/font_size = 12
 text = "$75
 DPS : 2.5
 Range : 140"
+label_settings = SubResource("LabelSettings_swdvl")
 
 [node name="AOE tower2 panal" parent="placing panel/FlowContainer" unique_id=931870247 instance=ExtResource("5_q0xr7")]
 layout_mode = 2
@@ -111,6 +147,7 @@ theme_override_font_sizes/font_size = 12
 text = "$90
 DPS : 1.5
 Range : 120"
+label_settings = SubResource("LabelSettings_14c2m")
 
 [node name="bullet tower2 panal2" parent="placing panel/FlowContainer" unique_id=1982086283 instance=ExtResource("6_d66s8")]
 layout_mode = 2
@@ -127,8 +164,10 @@ offset_right = 78.0
 offset_bottom = 72.88
 theme_override_font_sizes/font_size = 12
 text = "$45
-strat : Storm
+strat: 
+Storm
 "
+label_settings = SubResource("LabelSettings_tqu6k")
 
 [node name="heat tower panel" parent="placing panel/FlowContainer" unique_id=519851284 instance=ExtResource("7_tb4cu")]
 layout_mode = 2
@@ -145,8 +184,10 @@ offset_right = 71.0
 offset_bottom = 72.88
 theme_override_font_sizes/font_size = 12
 text = "$45
-strat : Snow
+strat: 
+Snow
 Range : 60"
+label_settings = SubResource("LabelSettings_0cg7c")
 
 [node name="light panel" parent="placing panel/FlowContainer" unique_id=1632384826 instance=ExtResource("8_tjmn6")]
 layout_mode = 2
@@ -163,8 +204,10 @@ offset_right = 71.0
 offset_bottom = 72.88
 theme_override_font_sizes/font_size = 12
 text = "$45
-strat : Fog
+strat: 
+Fog
 Range : 60"
+label_settings = SubResource("LabelSettings_3emd8")
 
 [node name="range button" type="Button" parent="." unique_id=197051444]
 custom_minimum_size = Vector2(20, 20)
@@ -173,22 +216,24 @@ offset_left = 13.0
 offset_top = 590.0
 offset_right = 172.67743
 offset_bottom = 635.0
+theme_override_fonts/font = ExtResource("4_swdvl")
 theme_override_font_sizes/font_size = 20
 text = "Show Ranges"
 script = ExtResource("9_8akqn")
 
 [node name="currency label" type="Label" parent="." unique_id=137009160]
 layout_mode = 0
-offset_left = 50.0
-offset_top = 4.0
-offset_right = 123.0
-offset_bottom = 49.0
+offset_left = 53.0
+offset_top = 6.0
+offset_right = 159.0
+offset_bottom = 58.0
 theme_override_font_sizes/font_size = 32
 text = "5000"
+label_settings = SubResource("LabelSettings_u3nuv")
 script = ExtResource("10_we0ls")
 
 [node name="Sprite2D" type="Sprite2D" parent="currency label" unique_id=71741780]
-position = Vector2(-25, 21)
+position = Vector2(-28.999998, 17)
 scale = Vector2(1.5624999, 1.5624999)
 texture = ExtResource("11_uesp2")
 
@@ -198,6 +243,7 @@ offset_left = 446.0
 offset_top = 582.0
 offset_right = 558.0
 offset_bottom = 635.0
+theme_override_fonts/font = ExtResource("4_swdvl")
 theme_override_font_sizes/font_size = 32
 text = "SELL"
 script = ExtResource("13_820km")
@@ -208,9 +254,58 @@ offset_left = 570.0
 offset_top = 582.0
 offset_right = 682.0
 offset_bottom = 635.0
+theme_override_fonts/font = ExtResource("4_swdvl")
 theme_override_font_sizes/font_size = 32
 text = "BUY
 "
+
+[node name="Button" type="Button" parent="." unique_id=1902620728]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 543.0
+offset_right = 88.38709
+offset_bottom = 584.0
+theme_override_fonts/font = ExtResource("4_swdvl")
+theme_override_font_sizes/font_size = 20
+text = "MENU"
+
+[node name="main menu show" type="Panel" parent="." unique_id=1641770316]
+process_mode = 3
+visible = false
+layout_mode = 0
+offset_left = -1.0
+offset_top = -2.0
+offset_right = 1156.0
+offset_bottom = 648.0
+
+[node name="FlowContainer" type="FlowContainer" parent="main menu show" unique_id=968109111]
+layout_direction = 4
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -33.0
+offset_right = 110.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="quit" type="Button" parent="main menu show/FlowContainer" unique_id=1327960901]
+custom_minimum_size = Vector2(220, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_swdvl")
+theme_override_font_sizes/font_size = 28
+text = "QUIT"
+
+[node name="Button2" type="Button" parent="main menu show/FlowContainer" unique_id=1882124119]
+custom_minimum_size = Vector2(220, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_swdvl")
+theme_override_font_sizes/font_size = 28
+text = "RESUME"
 
 [connection signal="gui_input" from="placing panel/FlowContainer/bullet tower" to="placing panel" method="_on_bullet_tower_gui_input"]
 [connection signal="gui_input" from="placing panel/FlowContainer/AOE tower panal" to="placing panel" method="_on_aoe_tower_panal_gui_input"]
@@ -222,3 +317,6 @@ text = "BUY
 [connection signal="pressed" from="range button" to="range button" method="_on_pressed"]
 [connection signal="pressed" from="sell button" to="sell button" method="_on_pressed"]
 [connection signal="pressed" from="buy button" to="." method="_on_buy_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="main menu show/FlowContainer/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="main menu show/FlowContainer/Button2" to="." method="_on_button_2_pressed"]
